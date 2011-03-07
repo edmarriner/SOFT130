@@ -43,7 +43,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button1.Location = new System.Drawing.Point(119, 147);
+            this.button1.Location = new System.Drawing.Point(125, 220);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(199, 117);
             this.button1.TabIndex = 0;
@@ -53,7 +53,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button2.Location = new System.Drawing.Point(430, 147);
+            this.button2.Location = new System.Drawing.Point(451, 220);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(199, 117);
             this.button2.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             this.lbldate.AutoSize = true;
             this.lbldate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldate.Location = new System.Drawing.Point(78, 330);
+            this.lbldate.Location = new System.Drawing.Point(139, 136);
             this.lbldate.Name = "lbldate";
             this.lbldate.Size = new System.Drawing.Size(41, 20);
             this.lbldate.TabIndex = 4;
@@ -74,7 +74,7 @@
             // 
             this.lbltime.AutoSize = true;
             this.lbltime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltime.Location = new System.Drawing.Point(564, 337);
+            this.lbltime.Location = new System.Drawing.Point(611, 136);
             this.lbltime.Name = "lbltime";
             this.lbltime.Size = new System.Drawing.Size(39, 20);
             this.lbltime.TabIndex = 5;

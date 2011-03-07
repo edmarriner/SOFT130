@@ -7,3 +7,5 @@ C:\Users\Jake\documents\visual studio 2010\Projects\SOFT130Project\SOFT130Projec
 C:\Users\Jake\documents\visual studio 2010\Projects\SOFT130Project\SOFT130Project\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Jake\documents\visual studio 2010\Projects\SOFT130Project\SOFT130Project\obj\x86\Debug\SOFT130Project.exe
 C:\Users\Jake\documents\visual studio 2010\Projects\SOFT130Project\SOFT130Project\obj\x86\Debug\SOFT130Project.pdb
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\SOFT130Project.exe
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\SOFT130Project.pdb
