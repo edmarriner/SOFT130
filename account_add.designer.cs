@@ -87,7 +87,7 @@
             this.btnAddAccount.Name = "btnAddAccount";
             this.btnAddAccount.Size = new System.Drawing.Size(132, 33);
             this.btnAddAccount.TabIndex = 33;
-            this.btnAddAccount.Text = "Add Account";
+            this.btnAddAccount.Text = "Add a new Account  - HMBC Inc.";
             this.btnAddAccount.UseVisualStyleBackColor = false;
             // 
             // txtAccountName

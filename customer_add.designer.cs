@@ -428,7 +428,7 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.btnAddCustomer);
             this.Name = "newcustomer";
-            this.Text = "newcustomer";
+            this.Text = "Add a new Customer  - HMBC Inc.";
             this.Load += new System.EventHandler(this.newcustomer_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

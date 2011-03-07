@@ -43,7 +43,7 @@
             // btnNewCustomer
             // 
             this.btnNewCustomer.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnNewCustomer.Location = new System.Drawing.Point(16, 148);
+            this.btnNewCustomer.Location = new System.Drawing.Point(12, 185);
             this.btnNewCustomer.Name = "btnNewCustomer";
             this.btnNewCustomer.Size = new System.Drawing.Size(199, 117);
             this.btnNewCustomer.TabIndex = 0;
@@ -53,7 +53,7 @@
             // btnExistingCustomer
             // 
             this.btnExistingCustomer.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnExistingCustomer.Location = new System.Drawing.Point(238, 148);
+            this.btnExistingCustomer.Location = new System.Drawing.Point(246, 185);
             this.btnExistingCustomer.Name = "btnExistingCustomer";
             this.btnExistingCustomer.Size = new System.Drawing.Size(199, 117);
             this.btnExistingCustomer.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             this.lbldate.AutoSize = true;
             this.lbldate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldate.Location = new System.Drawing.Point(12, 113);
+            this.lbldate.Location = new System.Drawing.Point(8, 140);
             this.lbldate.Name = "lbldate";
             this.lbldate.Size = new System.Drawing.Size(41, 20);
             this.lbldate.TabIndex = 4;
@@ -74,7 +74,7 @@
             // 
             this.lbltime.AutoSize = true;
             this.lbltime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltime.Location = new System.Drawing.Point(385, 113);
+            this.lbltime.Location = new System.Drawing.Point(406, 140);
             this.lbltime.Name = "lbltime";
             this.lbltime.Size = new System.Drawing.Size(39, 20);
             this.lbltime.TabIndex = 5;
@@ -85,7 +85,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.SkyBlue;
             this.pictureBox2.Location = new System.Drawing.Point(2, -2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(773, 135);
+            this.pictureBox2.Size = new System.Drawing.Size(773, 139);
             this.pictureBox2.TabIndex = 45;
             this.pictureBox2.TabStop = false;
             // 
@@ -115,7 +115,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.ClientSize = new System.Drawing.Size(457, 278);
+            this.ClientSize = new System.Drawing.Size(457, 314);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
@@ -124,7 +124,7 @@
             this.Controls.Add(this.btnExistingCustomer);
             this.Controls.Add(this.btnNewCustomer);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Main Menu - HMBC Inc.";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
