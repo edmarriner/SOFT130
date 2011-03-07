@@ -64,6 +64,7 @@
             this.btnExistingCustomer.TabIndex = 1;
             this.btnExistingCustomer.Text = "Existing Customer";
             this.btnExistingCustomer.UseVisualStyleBackColor = false;
+            this.btnExistingCustomer.Click += new System.EventHandler(this.btnExistingCustomer_Click);
             // 
             // lblDate
             // 
@@ -131,6 +132,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ClientSize = new System.Drawing.Size(457, 304);
+            this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);

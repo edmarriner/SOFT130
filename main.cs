@@ -23,5 +23,7 @@ namespace SOFT130Project
             frmMainMenu frmMainMenu = new frmMainMenu();
             frmMainMenu.Show();
         }
+
+        
     }
 }

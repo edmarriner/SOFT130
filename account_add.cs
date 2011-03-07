@@ -16,10 +16,10 @@ namespace SOFT130Project
             InitializeComponent();
         }
 
+        bool showMainMenu = true;
+
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            frmMainMenu frmMainMenu = new frmMainMenu();
-            frmMainMenu.Show();
             this.Close();
         }
 
@@ -27,7 +27,22 @@ namespace SOFT130Project
         {
             frmTransactionAdd frmTransactionAdd = new frmTransactionAdd();
             frmTransactionAdd.Show();
+            showMainMenu = false;
             this.Close();
+        }
+
+        private void frmAccountAdd_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (showMainMenu)
+            {
+                frmMainMenu frmMainMenu = new frmMainMenu();
+                frmMainMenu.Show();
+            }
+        }
+
+        private void frmAccountAdd_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -36,5 +36,12 @@ namespace SOFT130Project
             this.Close();
         }
 
+        private void btnExistingCustomer_Click(object sender, EventArgs e)
+        {
+            frmCustomerSearch frmCustomerSearch = new frmCustomerSearch();
+            frmCustomerSearch.Show();
+            this.Close();
+        }
+
     }
 }
