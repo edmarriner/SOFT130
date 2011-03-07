@@ -7,13 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Soft130_Coursework
+namespace SOFT130Project
 {
-    public partial class addaccount : Form
+    public partial class frmAccountAdd : Form
     {
-        public addaccount()
+        public frmAccountAdd()
         {
             InitializeComponent();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            frmMainMenu frmMainMenu = new frmMainMenu();
+            frmMainMenu.Show();
+            this.Close();
+        }
+
+        private void btnAddAccount_Click(object sender, EventArgs e)
+        {
+            frmTransactionAdd frmTransactionAdd = new frmTransactionAdd();
+            frmTransactionAdd.Show();
+            this.Close();
         }
     }
 }

@@ -7,23 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Soft130_Coursework
+namespace SOFT130Project
 {
-    public partial class newcustomer : Form
+    public partial class frmCustomerAdd : Form
     {
-        public newcustomer()
+        public frmCustomerAdd()
         {
             InitializeComponent();
         }
 
-        private void newcustomer_Load(object sender, EventArgs e)
-        {
+ 
 
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            frmMainMenu frmMainMenu = new frmMainMenu();
+            frmMainMenu.Show();
+            this.Close();
         }
 
-        private void label13_Click(object sender, EventArgs e)
+        private void btnAddCustomer_Click(object sender, EventArgs e)
         {
-
+            frmAccountAdd frmAccountAdd = new frmAccountAdd();
+            frmAccountAdd.Show();
+            this.Close();
         }
     }
 }

@@ -11,3 +11,15 @@ C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\
 C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\SOFT130Project.pdb
 D:\SOFT130-GIT\obj\x86\Debug\SOFT130Project.exe
 D:\SOFT130-GIT\obj\x86\Debug\SOFT130Project.pdb
+D:\SOFT130-GIT\bin\Debug\SOFT130Project.exe
+D:\SOFT130-GIT\bin\Debug\SOFT130Project.pdb
+D:\SOFT130-GIT\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\SOFT130-GIT\obj\x86\Debug\SOFT130Project.Properties.Resources.resources
+D:\SOFT130-GIT\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\SOFT130-GIT\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\SOFT130-GIT\obj\x86\Debug\SOFT130Project.frmMain.resources
+D:\SOFT130-GIT\obj\x86\Debug\SOFT130Project.frmCustomerSearch.resources
+D:\SOFT130-GIT\obj\x86\Debug\SOFT130Project.frmAccountAdd.resources
+D:\SOFT130-GIT\obj\x86\Debug\SOFT130Project.frmTransactionAdd.resources
+D:\SOFT130-GIT\obj\x86\Debug\SOFT130Project.frmMainMenu.resources
+D:\SOFT130-GIT\obj\x86\Debug\SOFT130Project.frmCustomerAdd.resources

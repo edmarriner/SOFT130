@@ -9,16 +9,19 @@ using System.Windows.Forms;
 
 namespace SOFT130Project
 {
-    public partial class frmCustomerSearch : Form
+    public partial class frmMain : Form
     {
-        public frmCustomerSearch()
+      
+        public frmMain()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            frmMainMenu frmMainMenu = new frmMainMenu();
+            frmMainMenu.Show();
         }
     }
 }
