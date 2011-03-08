@@ -46,6 +46,7 @@ namespace SOFT130Project
         {
             cboDoBMM.SelectedIndex = 0;
             cboTitle.SelectedIndex = 0;
+            cboCounty.SelectedIndex = 22;
         }
 
         private void txtPostcode_TextChanged(object sender, EventArgs e)
@@ -172,6 +173,8 @@ namespace SOFT130Project
                 pboDoB.Image = new Bitmap("cross.png");
             }
         }
+
+     
 
       
     
