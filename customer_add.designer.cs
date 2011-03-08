@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomerAdd));
             this.txtSurname = new System.Windows.Forms.TextBox();
             this.txtDoBDD = new System.Windows.Forms.TextBox();
@@ -72,7 +71,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbldate = new System.Windows.Forms.Label();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboPostcode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboCityTown)).BeginInit();
@@ -662,11 +660,6 @@
             this.lbldate.TabIndex = 53;
             this.lbldate.Text = "Add a new customer";
             // 
-            // notifyIcon1
-            // 
-            this.notifyIcon1.Text = "notifyIcon1";
-            this.notifyIcon1.Visible = true;
-            // 
             // frmCustomerAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -753,6 +746,5 @@
         private System.Windows.Forms.PictureBox pboPassword;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }

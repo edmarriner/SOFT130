@@ -40,7 +40,14 @@ namespace SOFT130Project
             }
         }
 
-        private void frmTransactionAdd_Load(object sender, EventArgs e)
+     
+
+        private void validateDescription(object sender, EventArgs e)
+        {
+
+        }
+
+        private void validateAmount(object sender, EventArgs e)
         {
 
         }

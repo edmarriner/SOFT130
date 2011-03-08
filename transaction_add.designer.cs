@@ -40,8 +40,12 @@
             this.lbldate = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAddCustomer = new System.Windows.Forms.Button();
+            this.pboFirstName = new System.Windows.Forms.PictureBox();
+            this.pboAmount = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboFirstName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboAmount)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -81,6 +85,9 @@
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(191, 26);
             this.txtDescription.TabIndex = 40;
+            this.txtDescription.TextChanged += new System.EventHandler(this.validateDescription);
+            this.txtDescription.Enter += new System.EventHandler(this.validateDescription);
+            this.txtDescription.Leave += new System.EventHandler(this.validateDescription);
             // 
             // txtAmount
             // 
@@ -89,6 +96,9 @@
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Size = new System.Drawing.Size(101, 26);
             this.txtAmount.TabIndex = 41;
+            this.txtAmount.TextChanged += new System.EventHandler(this.validateAmount);
+            this.txtAmount.Enter += new System.EventHandler(this.validateAmount);
+            this.txtAmount.Leave += new System.EventHandler(this.validateAmount);
             // 
             // cboType
             // 
@@ -104,7 +114,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.SkyBlue;
             this.pictureBox2.Location = new System.Drawing.Point(0, -1);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(413, 60);
+            this.pictureBox2.Size = new System.Drawing.Size(744, 60);
             this.pictureBox2.TabIndex = 44;
             this.pictureBox2.TabStop = false;
             // 
@@ -132,6 +142,7 @@
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCancel.Location = new System.Drawing.Point(181, 184);
             this.btnCancel.Name = "btnCancel";
@@ -154,13 +165,33 @@
             this.btnAddCustomer.UseVisualStyleBackColor = false;
             this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
             // 
+            // pboFirstName
+            // 
+            this.pboFirstName.Image = global::SOFT130Project.Properties.Resources.cross;
+            this.pboFirstName.Location = new System.Drawing.Point(378, 78);
+            this.pboFirstName.Name = "pboFirstName";
+            this.pboFirstName.Size = new System.Drawing.Size(16, 16);
+            this.pboFirstName.TabIndex = 50;
+            this.pboFirstName.TabStop = false;
+            // 
+            // pboAmount
+            // 
+            this.pboAmount.Image = global::SOFT130Project.Properties.Resources.cross;
+            this.pboAmount.Location = new System.Drawing.Point(288, 154);
+            this.pboAmount.Name = "pboAmount";
+            this.pboAmount.Size = new System.Drawing.Size(16, 16);
+            this.pboAmount.TabIndex = 51;
+            this.pboAmount.TabStop = false;
+            // 
             // frmTransactionAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(393, 233);
+            this.ClientSize = new System.Drawing.Size(418, 233);
+            this.Controls.Add(this.pboAmount);
+            this.Controls.Add(this.pboFirstName);
             this.Controls.Add(this.btnAddCustomer);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.lbldate);
@@ -179,9 +210,10 @@
             this.Text = "Add a Transaction - HMBC Inc.";
             this.TopMost = true;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmTransactionAdd_FormClosing);
-            this.Load += new System.EventHandler(this.frmTransactionAdd_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboFirstName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboAmount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,5 +232,7 @@
         private System.Windows.Forms.Label lbldate;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnAddCustomer;
+        private System.Windows.Forms.PictureBox pboFirstName;
+        private System.Windows.Forms.PictureBox pboAmount;
     }
 }
