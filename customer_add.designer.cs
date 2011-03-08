@@ -53,12 +53,11 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pboPostcode = new System.Windows.Forms.PictureBox();
             this.pboCityTown = new System.Windows.Forms.PictureBox();
-            this.pboAddressLine2 = new System.Windows.Forms.PictureBox();
             this.pboStreetName = new System.Windows.Forms.PictureBox();
             this.pboNumberName = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.txtNumberName = new System.Windows.Forms.TextBox();
-            this.txtAddressLine2 = new System.Windows.Forms.TextBox();
+            this.txtAddressArea = new System.Windows.Forms.TextBox();
             this.txtStreetName = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.pboPassword = new System.Windows.Forms.PictureBox();
@@ -75,7 +74,6 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboPostcode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboCityTown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboAddressLine2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboStreetName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboNumberName)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -163,11 +161,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(28, 93);
+            this.label7.Location = new System.Drawing.Point(43, 93);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(119, 20);
+            this.label7.Size = new System.Drawing.Size(110, 20);
             this.label7.TabIndex = 20;
-            this.label7.Text = "Address Line 2:";
+            this.label7.Text = "Address Area:";
             // 
             // label8
             // 
@@ -327,7 +325,6 @@
             // 
             this.groupBox1.Controls.Add(this.pboPostcode);
             this.groupBox1.Controls.Add(this.pboCityTown);
-            this.groupBox1.Controls.Add(this.pboAddressLine2);
             this.groupBox1.Controls.Add(this.pboStreetName);
             this.groupBox1.Controls.Add(this.pboNumberName);
             this.groupBox1.Controls.Add(this.comboBox1);
@@ -337,7 +334,7 @@
             this.groupBox1.Controls.Add(this.txtCityTown);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.txtPostcode);
-            this.groupBox1.Controls.Add(this.txtAddressLine2);
+            this.groupBox1.Controls.Add(this.txtAddressArea);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.txtStreetName);
             this.groupBox1.Controls.Add(this.label10);
@@ -366,15 +363,6 @@
             this.pboCityTown.Size = new System.Drawing.Size(16, 16);
             this.pboCityTown.TabIndex = 56;
             this.pboCityTown.TabStop = false;
-            // 
-            // pboAddressLine2
-            // 
-            this.pboAddressLine2.Image = ((System.Drawing.Image)(resources.GetObject("pboAddressLine2.Image")));
-            this.pboAddressLine2.Location = new System.Drawing.Point(330, 97);
-            this.pboAddressLine2.Name = "pboAddressLine2";
-            this.pboAddressLine2.Size = new System.Drawing.Size(16, 16);
-            this.pboAddressLine2.TabIndex = 55;
-            this.pboAddressLine2.TabStop = false;
             // 
             // pboStreetName
             // 
@@ -513,13 +501,13 @@
             this.txtNumberName.Enter += new System.EventHandler(this.validateNumberName);
             this.txtNumberName.Leave += new System.EventHandler(this.validateNumberName);
             // 
-            // txtAddressLine2
+            // txtAddressArea
             // 
-            this.txtAddressLine2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddressLine2.Location = new System.Drawing.Point(167, 90);
-            this.txtAddressLine2.Name = "txtAddressLine2";
-            this.txtAddressLine2.Size = new System.Drawing.Size(157, 26);
-            this.txtAddressLine2.TabIndex = 10;
+            this.txtAddressArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddressArea.Location = new System.Drawing.Point(167, 90);
+            this.txtAddressArea.Name = "txtAddressArea";
+            this.txtAddressArea.Size = new System.Drawing.Size(157, 26);
+            this.txtAddressArea.TabIndex = 10;
             // 
             // txtStreetName
             // 
@@ -699,7 +687,6 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboPostcode)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboCityTown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboAddressLine2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboStreetName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboNumberName)).EndInit();
             this.groupBox2.ResumeLayout(false);
@@ -741,7 +728,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txtNumberName;
-        private System.Windows.Forms.TextBox txtAddressLine2;
+        private System.Windows.Forms.TextBox txtAddressArea;
         private System.Windows.Forms.TextBox txtStreetName;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -752,7 +739,6 @@
         private System.Windows.Forms.PictureBox pboFirstName;
         private System.Windows.Forms.PictureBox pboPostcode;
         private System.Windows.Forms.PictureBox pboCityTown;
-        private System.Windows.Forms.PictureBox pboAddressLine2;
         private System.Windows.Forms.PictureBox pboStreetName;
         private System.Windows.Forms.PictureBox pboNumberName;
         private System.Windows.Forms.PictureBox pboDoB;
