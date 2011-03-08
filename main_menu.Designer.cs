@@ -64,7 +64,7 @@
             // 
             this.lbldate.AutoSize = true;
             this.lbldate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldate.Location = new System.Drawing.Point(139, 136);
+            this.lbldate.Location = new System.Drawing.Point(121, 136);
             this.lbldate.Name = "lbldate";
             this.lbldate.Size = new System.Drawing.Size(41, 20);
             this.lbldate.TabIndex = 4;

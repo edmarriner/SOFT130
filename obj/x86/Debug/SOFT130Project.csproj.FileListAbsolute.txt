@@ -9,3 +9,14 @@ C:\Users\Jake\documents\visual studio 2010\Projects\SOFT130Project\SOFT130Projec
 C:\Users\Jake\documents\visual studio 2010\Projects\SOFT130Project\SOFT130Project\obj\x86\Debug\SOFT130Project.pdb
 C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\SOFT130Project.exe
 C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\SOFT130Project.pdb
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\bin\Debug\SOFT130Project.exe
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\bin\Debug\SOFT130Project.pdb
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\Soft130_Coursework.addaccount.resources
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\Soft130_Coursework.addtransaction.resources
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\SOFT130Project.customer_search.resources
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\Soft130_Coursework.Form1.resources
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\Soft130_Coursework.newcustomer.resources
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\SOFT130Project.Properties.Resources.resources
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\GenerateResource.write.1.tlog
