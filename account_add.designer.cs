@@ -45,8 +45,15 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbldate = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.pboAccountName = new System.Windows.Forms.PictureBox();
+            this.pboSortCode = new System.Windows.Forms.PictureBox();
+            this.pboOverdraftLimit = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboAccountName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboSortCode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboOverdraftLimit)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -99,6 +106,9 @@
             this.txtAccountName.Name = "txtAccountName";
             this.txtAccountName.Size = new System.Drawing.Size(169, 26);
             this.txtAccountName.TabIndex = 1;
+            this.txtAccountName.TextChanged += new System.EventHandler(this.validateAccountName);
+            this.txtAccountName.Enter += new System.EventHandler(this.validateAccountName);
+            this.txtAccountName.Leave += new System.EventHandler(this.validateAccountName);
             // 
             // txtOverdraftLimit
             // 
@@ -107,6 +117,8 @@
             this.txtOverdraftLimit.Name = "txtOverdraftLimit";
             this.txtOverdraftLimit.Size = new System.Drawing.Size(116, 26);
             this.txtOverdraftLimit.TabIndex = 5;
+            this.txtOverdraftLimit.TextChanged += new System.EventHandler(this.validateOverdraftLimit);
+            this.txtOverdraftLimit.Enter += new System.EventHandler(this.validateOverdraftLimit);
             // 
             // txtSortCode1
             // 
@@ -115,6 +127,9 @@
             this.txtSortCode1.Name = "txtSortCode1";
             this.txtSortCode1.Size = new System.Drawing.Size(37, 26);
             this.txtSortCode1.TabIndex = 2;
+            this.txtSortCode1.TextChanged += new System.EventHandler(this.validateSortCode);
+            this.txtSortCode1.Enter += new System.EventHandler(this.validateSortCode);
+            this.txtSortCode1.Leave += new System.EventHandler(this.validateSortCode);
             // 
             // txtSortCode2
             // 
@@ -123,6 +138,9 @@
             this.txtSortCode2.Name = "txtSortCode2";
             this.txtSortCode2.Size = new System.Drawing.Size(37, 26);
             this.txtSortCode2.TabIndex = 3;
+            this.txtSortCode2.TextChanged += new System.EventHandler(this.validateSortCode);
+            this.txtSortCode2.Enter += new System.EventHandler(this.validateSortCode);
+            this.txtSortCode2.Leave += new System.EventHandler(this.validateSortCode);
             // 
             // txtSortCode3
             // 
@@ -131,6 +149,9 @@
             this.txtSortCode3.Name = "txtSortCode3";
             this.txtSortCode3.Size = new System.Drawing.Size(37, 26);
             this.txtSortCode3.TabIndex = 4;
+            this.txtSortCode3.TextChanged += new System.EventHandler(this.validateSortCode);
+            this.txtSortCode3.Enter += new System.EventHandler(this.validateSortCode);
+            this.txtSortCode3.Leave += new System.EventHandler(this.validateSortCode);
             // 
             // label4
             // 
@@ -206,6 +227,41 @@
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(357, 192);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 95);
+            this.listBox1.TabIndex = 100;
+            // 
+            // pboAccountName
+            // 
+            this.pboAccountName.Image = global::SOFT130Project.Properties.Resources.cross;
+            this.pboAccountName.Location = new System.Drawing.Point(321, 87);
+            this.pboAccountName.Name = "pboAccountName";
+            this.pboAccountName.Size = new System.Drawing.Size(16, 16);
+            this.pboAccountName.TabIndex = 101;
+            this.pboAccountName.TabStop = false;
+            // 
+            // pboSortCode
+            // 
+            this.pboSortCode.Image = global::SOFT130Project.Properties.Resources.cross;
+            this.pboSortCode.Location = new System.Drawing.Point(284, 125);
+            this.pboSortCode.Name = "pboSortCode";
+            this.pboSortCode.Size = new System.Drawing.Size(16, 16);
+            this.pboSortCode.TabIndex = 102;
+            this.pboSortCode.TabStop = false;
+            // 
+            // pboOverdraftLimit
+            // 
+            this.pboOverdraftLimit.Image = global::SOFT130Project.Properties.Resources.cross;
+            this.pboOverdraftLimit.Location = new System.Drawing.Point(284, 166);
+            this.pboOverdraftLimit.Name = "pboOverdraftLimit";
+            this.pboOverdraftLimit.Size = new System.Drawing.Size(16, 16);
+            this.pboOverdraftLimit.TabIndex = 103;
+            this.pboOverdraftLimit.TabStop = false;
+            // 
             // frmAccountAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -213,6 +269,10 @@
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(355, 253);
+            this.Controls.Add(this.pboOverdraftLimit);
+            this.Controls.Add(this.pboSortCode);
+            this.Controls.Add(this.pboAccountName);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.lbldate);
             this.Controls.Add(this.pictureBox1);
@@ -239,6 +299,9 @@
             this.Load += new System.EventHandler(this.frmAccountAdd_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboAccountName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboSortCode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboOverdraftLimit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,5 +325,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbldate;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.PictureBox pboAccountName;
+        private System.Windows.Forms.PictureBox pboSortCode;
+        private System.Windows.Forms.PictureBox pboOverdraftLimit;
     }
 }
