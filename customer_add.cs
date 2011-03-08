@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace SOFT130Project
 {
@@ -116,7 +117,19 @@ namespace SOFT130Project
 
         private void validatePostcode(object sender, EventArgs e)
         {
-            pboPostcode.Image = new Bitmap("cross.png");
+            int currentSelection;
+            currentSelection = txtPostcode.SelectionStart;
+            txtPostcode.Text = (txtPostcode.Text).ToString().ToUpper().Replace(" ", "");
+            txtPostcode.Select(currentSelection, 0);
+            Regex postcodePattern = new Regex("^([A-PR-UWYZ0-9][A-HK-Y0-9][AEHMNPRTVXY0-9]?[ABEHMNPRVWXY0-9]{1,2}[0-9][ABD-HJLN-UW-Z]{2}|GIR 0AA)$");
+            if (postcodePattern.IsMatch(txtPostcode.Text))
+            {
+                pboPostcode.Image = new Bitmap("tick.png");
+            }
+            else
+            {
+                pboPostcode.Image = new Bitmap("cross.png");
+            }
         }
 
         private void validatePassword(object sender, EventArgs e)
