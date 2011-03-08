@@ -7,23 +7,176 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Soft130_Coursework
+namespace SOFT130Project
 {
-    public partial class newcustomer : Form
+    public partial class frmCustomerAdd : Form
     {
-        public newcustomer()
+        public frmCustomerAdd()
         {
             InitializeComponent();
         }
 
-        private void newcustomer_Load(object sender, EventArgs e)
+        bool showMainMenu = true;
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnAddCustomer_Click(object sender, EventArgs e)
+        {
+            frmAccountAdd frmAccountAdd = new frmAccountAdd();
+            frmAccountAdd.Show();
+            showMainMenu = false;
+            this.Close();
+
+        }
+
+        private void frmCustomerAdd_FormClosing(object sender, FormClosingEventArgs e)
+        {
+           
+            if (showMainMenu)
+            {
+                frmMainMenu frmMainMenu = new frmMainMenu();
+                frmMainMenu.Show();
+            }
+        }
+
+        private void frmCustomerAdd_Load(object sender, EventArgs e)
+        {
+            cboDoBMM.SelectedIndex = 0;
+            cboTitle.SelectedIndex = 0;
+        }
+
+        private void txtPostcode_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void label13_Click(object sender, EventArgs e)
+        private void validateFirstName(object sender, EventArgs e)
         {
-
+            if (txtFirstName.Text != "")
+            {
+                pboFirstName.Image = new Bitmap("tick.png");
+            }
+            else
+            {
+                pboFirstName.Image = new Bitmap("cross.png");
+            }
         }
+
+        private void validateSurname(object sender, EventArgs e)
+        {
+            if (txtSurname.Text != "")
+            {
+                pboSurname.Image = new Bitmap("tick.png");
+            }
+            else
+            {
+                pboSurname.Image = new Bitmap("cross.png");
+            }
+        }
+
+        private void validateNumberName(object sender, EventArgs e)
+        {
+            if (txtNumberName.Text != "")
+            {
+                pboNumberName.Image = new Bitmap("tick.png");
+            }
+            else
+            {
+                pboNumberName.Image = new Bitmap("cross.png");
+            }
+        }
+
+        private void validateStreetName(object sender, EventArgs e)
+        {
+            if (txtStreetName.Text != "")
+            {
+                pboStreetName.Image = new Bitmap("tick.png");
+            }
+            else
+            {
+                pboStreetName.Image = new Bitmap("cross.png");
+            }
+        }
+
+        private void validateCityTown(object sender, EventArgs e)
+        {
+            if (txtCityTown.Text != "")
+            {
+                pboCityTown.Image = new Bitmap("tick.png");
+            }
+            else
+            {
+                pboCityTown.Image = new Bitmap("cross.png");
+            }
+        }
+
+        private void validatePostcode(object sender, EventArgs e)
+        {
+            pboPostcode.Image = new Bitmap("cross.png");
+        }
+
+        private void validatePassword(object sender, EventArgs e)
+        {
+            if (txtPassword.Text.Length >= 8)
+            {
+                pboPassword.Image = new Bitmap("tick.png");
+            }
+            else
+            {
+                pboPassword.Image = new Bitmap("cross.png");
+            }
+        }
+
+        private void frmCustomerAdd_Activated(object sender, EventArgs e)
+        {
+            txtFirstName.Focus();
+        }
+
+        private void validateDoB(object sender, EventArgs e)
+        {
+            DateTime Temp;
+            string dateWhole;
+            bool passed = false;
+            dateWhole = txtDoBDD.Text + "/" + (Convert.ToInt32(cboDoBMM.SelectedIndex)+1) + "/" + txtDoBYYYY.Text;
+
+            if (DateTime.TryParse(dateWhole, out Temp) == true)
+            {
+                passed = true;
+            }
+
+            try
+            {
+                if (Convert.ToInt32(txtDoBYYYY.Text) > 1850)
+                {
+                    passed = true;
+                }
+                else
+                {
+                    passed = false;
+                }
+            }
+            catch
+            {
+                passed = false;
+            }
+
+            if (passed)
+            {
+                pboDoB.Image = new Bitmap("tick.png");
+            }
+            else
+            {
+                pboDoB.Image = new Bitmap("cross.png");
+            }
+        }
+
+      
+    
+
+    
+    
     }
 }

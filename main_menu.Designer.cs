@@ -1,6 +1,6 @@
-﻿namespace Soft130_Coursework
+﻿namespace SOFT130Project
 {
-    partial class Form1
+    partial class frmMainMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,64 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.lbldate = new System.Windows.Forms.Label();
-            this.lbltime = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainMenu));
+            this.btnNewCustomer = new System.Windows.Forms.Button();
+            this.btnExistingCustomer = new System.Windows.Forms.Button();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.tmrDateTime = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnNewCustomer
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button1.Location = new System.Drawing.Point(125, 220);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(199, 117);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "New Customer";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnNewCustomer.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnNewCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewCustomer.Location = new System.Drawing.Point(12, 173);
+            this.btnNewCustomer.Name = "btnNewCustomer";
+            this.btnNewCustomer.Size = new System.Drawing.Size(199, 117);
+            this.btnNewCustomer.TabIndex = 0;
+            this.btnNewCustomer.Text = "New Customer";
+            this.btnNewCustomer.UseVisualStyleBackColor = false;
+            this.btnNewCustomer.Click += new System.EventHandler(this.btnNewCustomer_Click);
             // 
-            // button2
+            // btnExistingCustomer
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button2.Location = new System.Drawing.Point(451, 220);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(199, 117);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Existing Customer";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnExistingCustomer.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnExistingCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExistingCustomer.Location = new System.Drawing.Point(246, 173);
+            this.btnExistingCustomer.Name = "btnExistingCustomer";
+            this.btnExistingCustomer.Size = new System.Drawing.Size(199, 117);
+            this.btnExistingCustomer.TabIndex = 1;
+            this.btnExistingCustomer.Text = "Existing Customer";
+            this.btnExistingCustomer.UseVisualStyleBackColor = false;
+            this.btnExistingCustomer.Click += new System.EventHandler(this.btnExistingCustomer_Click);
             // 
-            // lbldate
+            // lblDate
             // 
-            this.lbldate.AutoSize = true;
-            this.lbldate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldate.Location = new System.Drawing.Point(121, 136);
-            this.lbldate.Name = "lbldate";
-            this.lbldate.Size = new System.Drawing.Size(41, 20);
-            this.lbldate.TabIndex = 4;
-            this.lbldate.Text = "date";
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lblDate.Location = new System.Drawing.Point(22, 146);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(35, 16);
+            this.lblDate.TabIndex = 4;
+            this.lblDate.Text = "date";
             // 
-            // lbltime
+            // lblTime
             // 
-            this.lbltime.AutoSize = true;
-            this.lbltime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltime.Location = new System.Drawing.Point(611, 136);
-            this.lbltime.Name = "lbltime";
-            this.lbltime.Size = new System.Drawing.Size(39, 20);
-            this.lbltime.TabIndex = 5;
-            this.lbltime.Text = "time";
+            this.lblTime.AutoSize = true;
+            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lblTime.Location = new System.Drawing.Point(332, 146);
+            this.lblTime.MinimumSize = new System.Drawing.Size(100, 0);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(100, 16);
+            this.lblTime.TabIndex = 5;
+            this.lblTime.Text = "time";
+            this.lblTime.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.SkyBlue;
-            this.pictureBox2.Location = new System.Drawing.Point(2, -2);
+            this.pictureBox2.Location = new System.Drawing.Point(-5, -2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(773, 112);
+            this.pictureBox2.Size = new System.Drawing.Size(773, 139);
             this.pictureBox2.TabIndex = 45;
             this.pictureBox2.TabStop = false;
             // 
@@ -93,7 +103,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(56, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(12, -2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(242, 100);
             this.pictureBox1.TabIndex = 46;
@@ -104,27 +114,37 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.SkyBlue;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(363, 36);
+            this.label1.Location = new System.Drawing.Point(39, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(374, 25);
             this.label1.TabIndex = 47;
             this.label1.Text = "Welcome, please select an option:";
             // 
-            // Form1
+            // tmrDateTime
+            // 
+            this.tmrDateTime.Enabled = true;
+            this.tmrDateTime.Interval = 1000;
+            this.tmrDateTime.Tick += new System.EventHandler(this.tmrDateTime_Tick);
+            // 
+            // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.ClientSize = new System.Drawing.Size(774, 401);
+            this.ClientSize = new System.Drawing.Size(457, 304);
+            this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.lbltime);
-            this.Controls.Add(this.lbldate);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.lblTime);
+            this.Controls.Add(this.lblDate);
+            this.Controls.Add(this.btnExistingCustomer);
+            this.Controls.Add(this.btnNewCustomer);
+            this.Name = "frmMainMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Main Menu - HMBC Inc.";
+            this.TopMost = true;
+            this.Load += new System.EventHandler(this.frmMainMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -134,13 +154,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label lbldate;
-        private System.Windows.Forms.Label lbltime;
+        private System.Windows.Forms.Button btnNewCustomer;
+        private System.Windows.Forms.Button btnExistingCustomer;
+        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer tmrDateTime;
     }
 }
 

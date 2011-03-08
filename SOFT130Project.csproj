@@ -60,6 +60,12 @@
     <Compile Include="account_add.designer.cs">
       <DependentUpon>account_add.cs</DependentUpon>
     </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
     <Compile Include="transaction_add.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     <EmbeddedResource Include="account_add.resx">
       <DependentUpon>account_add.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="transaction_add.resx">
       <DependentUpon>transaction_add.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +118,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -119,6 +129,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tick.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

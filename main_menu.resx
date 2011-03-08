@@ -165,7 +165,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAALDgAACw4BQL7hQQAAFJpJREFUeF7tnXtwFtX5
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAALDAAACwwBP0AiyAAAFJpJREFUeF7tnXtwFtX5
         x5lxpjOd6cxv2pnOdPqb6cj9ommgQkrAQoeChoZGECoKSEEiN7EqCkHTEqICXkACGDQIEUJC0CD3AAY6
         be3VXqwzbb1b+VVbbAW5hKsS9vd8X96N63LOnrP7nt138+7zxzO5vLtnz57zfJ7nOc+5vJ0sy+rEwm3A
         OpB7OsBgs3FjHchRHeCOzdGOZU+ce57Yb58y3Aw360CO6gB3bI52rF8rz9fnnqdnuBlu1oEc1YHIO/bK
@@ -257,4 +257,7 @@
         gg==
 </value>
   </data>
+  <metadata name="tmrDateTime.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
