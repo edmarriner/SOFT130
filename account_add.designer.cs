@@ -56,7 +56,7 @@
             this.label1.Location = new System.Drawing.Point(22, 86);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 20);
-            this.label1.TabIndex = 7;
+            this.label1.TabIndex = 99;
             this.label1.Text = "Account Name:";
             // 
             // label2
@@ -66,7 +66,7 @@
             this.label2.Location = new System.Drawing.Point(55, 124);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 20);
-            this.label2.TabIndex = 8;
+            this.label2.TabIndex = 99;
             this.label2.Text = "Sort Code:";
             // 
             // label3
@@ -76,7 +76,7 @@
             this.label3.Location = new System.Drawing.Point(24, 164);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 20);
-            this.label3.TabIndex = 9;
+            this.label3.TabIndex = 99;
             this.label3.Text = "Overdraft Limit:";
             // 
             // btnAddAccount
@@ -87,7 +87,7 @@
             this.btnAddAccount.Location = new System.Drawing.Point(8, 204);
             this.btnAddAccount.Name = "btnAddAccount";
             this.btnAddAccount.Size = new System.Drawing.Size(132, 33);
-            this.btnAddAccount.TabIndex = 33;
+            this.btnAddAccount.TabIndex = 6;
             this.btnAddAccount.Text = "Add Account";
             this.btnAddAccount.UseVisualStyleBackColor = false;
             this.btnAddAccount.Click += new System.EventHandler(this.btnAddAccount_Click);
@@ -98,7 +98,7 @@
             this.txtAccountName.Location = new System.Drawing.Point(146, 83);
             this.txtAccountName.Name = "txtAccountName";
             this.txtAccountName.Size = new System.Drawing.Size(169, 26);
-            this.txtAccountName.TabIndex = 39;
+            this.txtAccountName.TabIndex = 1;
             // 
             // txtOverdraftLimit
             // 
@@ -106,7 +106,7 @@
             this.txtOverdraftLimit.Location = new System.Drawing.Point(162, 161);
             this.txtOverdraftLimit.Name = "txtOverdraftLimit";
             this.txtOverdraftLimit.Size = new System.Drawing.Size(116, 26);
-            this.txtOverdraftLimit.TabIndex = 40;
+            this.txtOverdraftLimit.TabIndex = 5;
             // 
             // txtSortCode1
             // 
@@ -114,7 +114,7 @@
             this.txtSortCode1.Location = new System.Drawing.Point(146, 121);
             this.txtSortCode1.Name = "txtSortCode1";
             this.txtSortCode1.Size = new System.Drawing.Size(37, 26);
-            this.txtSortCode1.TabIndex = 41;
+            this.txtSortCode1.TabIndex = 2;
             // 
             // txtSortCode2
             // 
@@ -122,7 +122,7 @@
             this.txtSortCode2.Location = new System.Drawing.Point(193, 121);
             this.txtSortCode2.Name = "txtSortCode2";
             this.txtSortCode2.Size = new System.Drawing.Size(37, 26);
-            this.txtSortCode2.TabIndex = 42;
+            this.txtSortCode2.TabIndex = 3;
             // 
             // txtSortCode3
             // 
@@ -130,7 +130,7 @@
             this.txtSortCode3.Location = new System.Drawing.Point(241, 120);
             this.txtSortCode3.Name = "txtSortCode3";
             this.txtSortCode3.Size = new System.Drawing.Size(37, 26);
-            this.txtSortCode3.TabIndex = 43;
+            this.txtSortCode3.TabIndex = 4;
             // 
             // label4
             // 
@@ -156,7 +156,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(231, 123);
+            this.label6.Location = new System.Drawing.Point(229, 123);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(14, 20);
             this.label6.TabIndex = 46;
@@ -201,7 +201,7 @@
             this.btnCancel.Location = new System.Drawing.Point(149, 204);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(132, 33);
-            this.btnCancel.TabIndex = 55;
+            this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);

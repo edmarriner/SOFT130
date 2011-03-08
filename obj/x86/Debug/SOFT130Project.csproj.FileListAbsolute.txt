@@ -23,3 +23,15 @@ D:\SOFT130-GIT\obj\x86\Debug\SOFT130Project.frmAccountAdd.resources
 D:\SOFT130-GIT\obj\x86\Debug\SOFT130Project.frmTransactionAdd.resources
 D:\SOFT130-GIT\obj\x86\Debug\SOFT130Project.frmMainMenu.resources
 D:\SOFT130-GIT\obj\x86\Debug\SOFT130Project.frmCustomerAdd.resources
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\SOFT130Project.frmAccountAdd.resources
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\SOFT130Project.frmMain.resources
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\SOFT130Project.frmTransactionAdd.resources
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\SOFT130Project.frmCustomerSearch.resources
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\SOFT130Project.frmMainMenu.resources
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\SOFT130Project.frmCustomerAdd.resources
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\SOFT130Project.Properties.Resources.resources
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\bin\Debug\SOFT130Project.exe
+C:\Users\Matt\Documents\University\Computer Science\SOFT130\GIT\SOFT130\bin\Debug\SOFT130Project.pdb

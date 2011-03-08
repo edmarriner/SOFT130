@@ -39,7 +39,6 @@
             this.Name = "frmMain";
             this.Text = "HMBC Inc.";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-           
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
 
