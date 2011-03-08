@@ -44,5 +44,41 @@ namespace SOFT130Project
         {
 
         }
+
+        private void validateAccountName(object sender, EventArgs e)
+        {
+            if (txtAccountName.Text != "")
+            {
+                pboAccountName.Image = new Bitmap("tick.png");
+            }
+            else
+            {
+                pboAccountName.Image = new Bitmap("cross.png");
+            }
+        }
+
+        private void validateSortCode(object sender, EventArgs e)
+        {
+            if (txtSortCode1.Text.Length == 2 && txtSortCode2.Text.Length == 2 && txtSortCode3.Text.Length == 2)
+            {
+                pboSortCode.Image = new Bitmap("tick.png");
+            }
+            else
+            {
+                pboSortCode.Image = new Bitmap("cross.png");
+            }
+        }
+
+        private void validateOverdraftLimit(object sender, EventArgs e)
+        {
+            if (txtOverdraftLimit.Text != "")
+            {
+                pboOverdraftLimit.Image = new Bitmap("tick.png");
+            }
+            else
+            {
+                pboOverdraftLimit.Image = new Bitmap("cross.png");
+            }
+        }
     }
 }
