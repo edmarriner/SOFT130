@@ -28,16 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomerSearch));
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbldate = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cboSearchField = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cboSearchTerm = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -49,29 +48,19 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(-2, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(770, 69);
+            this.panel1.Size = new System.Drawing.Size(326, 69);
             this.panel1.TabIndex = 0;
             // 
             // lbldate
             // 
             this.lbldate.AutoSize = true;
             this.lbldate.BackColor = System.Drawing.Color.SkyBlue;
-            this.lbldate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldate.Location = new System.Drawing.Point(160, 22);
+            this.lbldate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldate.Location = new System.Drawing.Point(93, 47);
             this.lbldate.Name = "lbldate";
             this.lbldate.Size = new System.Drawing.Size(148, 20);
             this.lbldate.TabIndex = 48;
             this.lbldate.Text = "Search Customer";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(146, 60);
-            this.pictureBox1.TabIndex = 47;
-            this.pictureBox1.TabStop = false;
             // 
             // label4
             // 
@@ -144,6 +133,16 @@
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
+            this.pictureBox1.BackgroundImage = global::SOFT130Project.Properties.Resources.hmbc;
+            this.pictureBox1.Location = new System.Drawing.Point(42, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(244, 45);
+            this.pictureBox1.TabIndex = 121;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmCustomerSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -180,10 +179,10 @@
         private System.Windows.Forms.ComboBox cboSearchField;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox cboSearchTerm;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label lbldate;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

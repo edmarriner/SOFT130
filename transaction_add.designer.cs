@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTransactionAdd));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -36,16 +35,16 @@
             this.txtAmount = new System.Windows.Forms.TextBox();
             this.cboType = new System.Windows.Forms.ComboBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbldate = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAddCustomer = new System.Windows.Forms.Button();
             this.pboFirstName = new System.Windows.Forms.PictureBox();
             this.pboAmount = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboFirstName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -118,22 +117,12 @@
             this.pictureBox2.TabIndex = 44;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(9, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(146, 60);
-            this.pictureBox1.TabIndex = 46;
-            this.pictureBox1.TabStop = false;
-            // 
             // lbldate
             // 
             this.lbldate.AutoSize = true;
             this.lbldate.BackColor = System.Drawing.Color.SkyBlue;
-            this.lbldate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldate.Location = new System.Drawing.Point(195, 21);
+            this.lbldate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldate.Location = new System.Drawing.Point(266, 19);
             this.lbldate.Name = "lbldate";
             this.lbldate.Size = new System.Drawing.Size(140, 20);
             this.lbldate.TabIndex = 47;
@@ -183,6 +172,16 @@
             this.pboAmount.TabIndex = 51;
             this.pboAmount.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
+            this.pictureBox1.BackgroundImage = global::SOFT130Project.Properties.Resources.hmbc;
+            this.pictureBox1.Location = new System.Drawing.Point(5, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(244, 45);
+            this.pictureBox1.TabIndex = 121;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmTransactionAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -190,12 +189,12 @@
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(418, 233);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pboAmount);
             this.Controls.Add(this.pboFirstName);
             this.Controls.Add(this.btnAddCustomer);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.lbldate);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.cboType);
             this.Controls.Add(this.txtAmount);
@@ -211,9 +210,9 @@
             this.TopMost = true;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmTransactionAdd_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboFirstName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,11 +227,11 @@
         private System.Windows.Forms.TextBox txtAmount;
         private System.Windows.Forms.ComboBox cboType;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbldate;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnAddCustomer;
         private System.Windows.Forms.PictureBox pboFirstName;
         private System.Windows.Forms.PictureBox pboAmount;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

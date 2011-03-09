@@ -67,6 +67,13 @@ namespace SOFT130Project.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap hmbc {
+            get {
+                object obj = ResourceManager.GetObject("hmbc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap tick {
             get {
                 object obj = ResourceManager.GetObject("tick", resourceCulture);

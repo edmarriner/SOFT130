@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(account_delete));
             this.btnCancel = new System.Windows.Forms.Button();
             this.lbldate = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnAddAccount = new System.Windows.Forms.Button();
@@ -43,8 +41,10 @@
             this.lblSortCode = new System.Windows.Forms.Label();
             this.lblOverdraftLimit = new System.Windows.Forms.Label();
             this.lblAccountName = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCancel
@@ -65,21 +65,11 @@
             this.lbldate.AutoSize = true;
             this.lbldate.BackColor = System.Drawing.Color.SkyBlue;
             this.lbldate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldate.Location = new System.Drawing.Point(179, 21);
+            this.lbldate.Location = new System.Drawing.Point(268, 9);
             this.lbldate.Name = "lbldate";
             this.lbldate.Size = new System.Drawing.Size(62, 20);
             this.lbldate.TabIndex = 110;
             this.lbldate.Text = "Delete";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(146, 60);
-            this.pictureBox1.TabIndex = 109;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -192,12 +182,35 @@
             this.lblAccountName.TabIndex = 118;
             this.lblAccountName.Text = "lblAccountName";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
+            this.pictureBox1.BackgroundImage = global::SOFT130Project.Properties.Resources.hmbc;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(244, 45);
+            this.pictureBox1.TabIndex = 119;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.SkyBlue;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(262, 35);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(75, 20);
+            this.label6.TabIndex = 120;
+            this.label6.Text = "Account";
+            // 
             // account_delete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ClientSize = new System.Drawing.Size(353, 311);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblAccountName);
             this.Controls.Add(this.lblOverdraftLimit);
             this.Controls.Add(this.lblSortCode);
@@ -205,7 +218,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.lbldate);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnAddAccount);
@@ -215,8 +227,8 @@
             this.Name = "account_delete";
             this.Text = "account_delete";
             this.TopMost = true;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,7 +238,6 @@
 
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label lbldate;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnAddAccount;
@@ -238,5 +249,7 @@
         private System.Windows.Forms.Label lblSortCode;
         private System.Windows.Forms.Label lblOverdraftLimit;
         private System.Windows.Forms.Label lblAccountName;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label6;
     }
 }

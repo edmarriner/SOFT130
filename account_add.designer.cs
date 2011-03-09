@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAccountAdd));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,18 +41,19 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbldate = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.pboAccountName = new System.Windows.Forms.PictureBox();
             this.pboSortCode = new System.Windows.Forms.PictureBox();
             this.pboOverdraftLimit = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboAccountName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboSortCode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboOverdraftLimit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -192,26 +192,16 @@
             this.pictureBox2.TabIndex = 52;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(1, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(146, 60);
-            this.pictureBox1.TabIndex = 53;
-            this.pictureBox1.TabStop = false;
-            // 
             // lbldate
             // 
             this.lbldate.AutoSize = true;
             this.lbldate.BackColor = System.Drawing.Color.SkyBlue;
             this.lbldate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldate.Location = new System.Drawing.Point(180, 25);
+            this.lbldate.Location = new System.Drawing.Point(265, 34);
             this.lbldate.Name = "lbldate";
-            this.lbldate.Size = new System.Drawing.Size(112, 20);
+            this.lbldate.Size = new System.Drawing.Size(75, 20);
             this.lbldate.TabIndex = 54;
-            this.lbldate.Text = "Add Account";
+            this.lbldate.Text = "Account";
             // 
             // btnCancel
             // 
@@ -262,6 +252,27 @@
             this.pboOverdraftLimit.TabIndex = 103;
             this.pboOverdraftLimit.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
+            this.pictureBox1.BackgroundImage = global::SOFT130Project.Properties.Resources.hmbc;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 11);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(244, 45);
+            this.pictureBox1.TabIndex = 120;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.SkyBlue;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(280, 11);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(41, 20);
+            this.label7.TabIndex = 121;
+            this.label7.Text = "Add";
+            // 
             // frmAccountAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -269,13 +280,14 @@
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(355, 253);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pboOverdraftLimit);
             this.Controls.Add(this.pboSortCode);
             this.Controls.Add(this.pboAccountName);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.lbldate);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -298,10 +310,10 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAccountAdd_FormClosing);
             this.Load += new System.EventHandler(this.frmAccountAdd_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboAccountName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboSortCode)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboOverdraftLimit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,12 +334,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbldate;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.PictureBox pboAccountName;
         private System.Windows.Forms.PictureBox pboSortCode;
         private System.Windows.Forms.PictureBox pboOverdraftLimit;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label7;
     }
 }

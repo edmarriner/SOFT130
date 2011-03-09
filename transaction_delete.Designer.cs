@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(transaction_delete));
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.lbldate = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,9 +43,10 @@
             this.lblAccountName = new System.Windows.Forms.Label();
             this.lblCustomerName = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDelete
@@ -78,22 +77,12 @@
             // 
             this.lbldate.AutoSize = true;
             this.lbldate.BackColor = System.Drawing.Color.SkyBlue;
-            this.lbldate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldate.Location = new System.Drawing.Point(194, 22);
+            this.lbldate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldate.Location = new System.Drawing.Point(290, 19);
             this.lbldate.Name = "lbldate";
             this.lbldate.Size = new System.Drawing.Size(161, 20);
             this.lbldate.TabIndex = 55;
             this.lbldate.Text = "Delete Transaction";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(8, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(146, 60);
-            this.pictureBox1.TabIndex = 54;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -219,11 +208,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Transaction";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
+            this.pictureBox1.BackgroundImage = global::SOFT130Project.Properties.Resources.hmbc;
+            this.pictureBox1.Location = new System.Drawing.Point(11, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(244, 45);
+            this.pictureBox1.TabIndex = 121;
+            this.pictureBox1.TabStop = false;
+            // 
             // transaction_delete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(463, 359);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblCustomerName);
             this.Controls.Add(this.lblAccountName);
@@ -232,15 +232,14 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.lbldate);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Name = "transaction_delete";
             this.Text = "transaction_delete";
             this.TopMost = true;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,7 +250,6 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label lbldate;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -264,5 +262,6 @@
         private System.Windows.Forms.Label lblAccountName;
         private System.Windows.Forms.Label lblCustomerName;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
