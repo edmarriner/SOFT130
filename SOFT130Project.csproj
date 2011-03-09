@@ -17,7 +17,6 @@
     </SccProjectName>
     <SccLocalPath>
     </SccLocalPath>
-   
     <SccProvider>
     </SccProvider>
   </PropertyGroup>
@@ -59,6 +58,12 @@
     <Compile Include="account_add.designer.cs">
       <DependentUpon>account_add.cs</DependentUpon>
     </Compile>
+    <Compile Include="customer_delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer_delete.Designer.cs">
+      <DependentUpon>customer_delete.cs</DependentUpon>
+    </Compile>
     <Compile Include="main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +98,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="account_add.resx">
       <DependentUpon>account_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer_delete.resx">
+      <DependentUpon>customer_delete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomerAdd));
             this.txtSurname = new System.Windows.Forms.TextBox();
             this.txtDoBDD = new System.Windows.Forms.TextBox();
@@ -72,7 +71,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbldate = new System.Windows.Forms.Label();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboPostcode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboCityTown)).BeginInit();
@@ -102,6 +100,7 @@
             // 
             this.txtDoBDD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDoBDD.Location = new System.Drawing.Point(167, 161);
+            this.txtDoBDD.MaxLength = 2;
             this.txtDoBDD.Name = "txtDoBDD";
             this.txtDoBDD.Size = new System.Drawing.Size(36, 26);
             this.txtDoBDD.TabIndex = 5;
@@ -294,6 +293,7 @@
             // 
             this.txtPostcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPostcode.Location = new System.Drawing.Point(167, 194);
+            this.txtPostcode.MaxLength = 7;
             this.txtPostcode.Name = "txtPostcode";
             this.txtPostcode.Size = new System.Drawing.Size(83, 26);
             this.txtPostcode.TabIndex = 13;
@@ -316,6 +316,7 @@
             // 
             this.txtDoBYYYY.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDoBYYYY.Location = new System.Drawing.Point(268, 161);
+            this.txtDoBYYYY.MaxLength = 4;
             this.txtDoBYYYY.Name = "txtDoBYYYY";
             this.txtDoBYYYY.Size = new System.Drawing.Size(43, 26);
             this.txtDoBYYYY.TabIndex = 7;
@@ -662,11 +663,6 @@
             this.lbldate.TabIndex = 53;
             this.lbldate.Text = "Add a new customer";
             // 
-            // notifyIcon1
-            // 
-            this.notifyIcon1.Text = "notifyIcon1";
-            this.notifyIcon1.Visible = true;
-            // 
             // frmCustomerAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -753,6 +749,5 @@
         private System.Windows.Forms.PictureBox pboPassword;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }
