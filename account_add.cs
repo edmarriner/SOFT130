@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace SOFT130Project
 {
@@ -59,6 +60,21 @@ namespace SOFT130Project
 
         private void validateSortCode(object sender, EventArgs e)
         {
+            //Only allow number entry in the sort code
+            Regex intOnly = new Regex("[^0-9]");
+            int currentSelection = txtSortCode1.SelectionStart;
+            txtSortCode1.Text = intOnly.Replace(txtSortCode1.Text, "");
+            txtSortCode1.Select(currentSelection, 0);
+
+            currentSelection = txtSortCode2.SelectionStart;
+            txtSortCode2.Text = intOnly.Replace(txtSortCode2.Text, "");
+            txtSortCode2.Select(currentSelection, 0);
+
+            currentSelection = txtSortCode3.SelectionStart;
+            txtSortCode3.Text = intOnly.Replace(txtSortCode3.Text, "");
+            txtSortCode3.Select(currentSelection, 0);
+
+            //Only validate sort code if there are exactly two numbers in each box
             if (txtSortCode1.Text.Length == 2 && txtSortCode2.Text.Length == 2 && txtSortCode3.Text.Length == 2)
             {
                 pboSortCode.Image = new Bitmap("tick.png");
@@ -71,6 +87,12 @@ namespace SOFT130Project
 
         private void validateOverdraftLimit(object sender, EventArgs e)
         {
+            //Only allow number entry or periods in the overdraft limit
+            Regex intOnly = new Regex("[^0-9.]");
+            int currentSelection = txtOverdraftLimit.SelectionStart;
+            txtOverdraftLimit.Text = intOnly.Replace(txtOverdraftLimit.Text, "");
+            txtOverdraftLimit.Select(currentSelection, 0);
+
             if (txtOverdraftLimit.Text != "")
             {
                 pboOverdraftLimit.Image = new Bitmap("tick.png");
