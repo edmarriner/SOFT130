@@ -15,5 +15,15 @@ namespace SOFT130Project
         {
             InitializeComponent();
         }
+
+        private void btnAddCustomer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
