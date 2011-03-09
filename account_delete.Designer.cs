@@ -1,6 +1,6 @@
 ﻿namespace SOFT130Project
 {
-    partial class transaction_delete
+    partial class account_delete
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "transaction_delete";
+            this.Text = "account_delete";
         }
 
         #endregion

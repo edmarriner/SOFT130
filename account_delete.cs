@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace SOFT130Project
 {
-    public partial class transaction_delete : Form
+    public partial class account_delete : Form
     {
-        public transaction_delete()
+        public account_delete()
         {
             InitializeComponent();
         }
