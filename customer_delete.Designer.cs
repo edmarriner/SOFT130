@@ -35,6 +35,12 @@
             this.btnAddCustomer = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.lblDob = new System.Windows.Forms.Label();
+            this.lblSurname = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.lblFirstName = new System.Windows.Forms.Label();
+            this.lblInitials = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,24 +48,18 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.lblInitials = new System.Windows.Forms.Label();
-            this.lblFirstName = new System.Windows.Forms.Label();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.lblSurname = new System.Windows.Forms.Label();
-            this.lblDob = new System.Windows.Forms.Label();
-            this.lblPassword = new System.Windows.Forms.Label();
             this.lblNumberName = new System.Windows.Forms.Label();
             this.lblStreetName = new System.Windows.Forms.Label();
             this.lblAddressArea = new System.Windows.Forms.Label();
             this.lblCityTown = new System.Windows.Forms.Label();
             this.lblCounty = new System.Windows.Forms.Label();
             this.lblPostcode = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -104,7 +104,7 @@
             this.btnAddCustomer.Location = new System.Drawing.Point(14, 589);
             this.btnAddCustomer.Name = "btnAddCustomer";
             this.btnAddCustomer.Size = new System.Drawing.Size(151, 33);
-            this.btnAddCustomer.TabIndex = 59;
+            this.btnAddCustomer.TabIndex = 1;
             this.btnAddCustomer.Text = "Delete";
             this.btnAddCustomer.UseVisualStyleBackColor = false;
             // 
@@ -113,10 +113,10 @@
             this.btnCancel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCancel.Location = new System.Drawing.Point(183, 590);
+            this.btnCancel.Location = new System.Drawing.Point(183, 589);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(132, 33);
-            this.btnCancel.TabIndex = 58;
+            this.btnCancel.TabIndex = 2;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
             // 
@@ -140,6 +140,66 @@
             this.groupBox2.TabIndex = 60;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Customer Information";
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(167, 197);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(93, 20);
+            this.lblPassword.TabIndex = 66;
+            this.lblPassword.Text = "lblPassword";
+            // 
+            // lblDob
+            // 
+            this.lblDob.AutoSize = true;
+            this.lblDob.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDob.Location = new System.Drawing.Point(167, 163);
+            this.lblDob.Name = "lblDob";
+            this.lblDob.Size = new System.Drawing.Size(54, 20);
+            this.lblDob.TabIndex = 65;
+            this.lblDob.Text = "lblDob";
+            // 
+            // lblSurname
+            // 
+            this.lblSurname.AutoSize = true;
+            this.lblSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSurname.Location = new System.Drawing.Point(167, 129);
+            this.lblSurname.Name = "lblSurname";
+            this.lblSurname.Size = new System.Drawing.Size(89, 20);
+            this.lblSurname.TabIndex = 64;
+            this.lblSurname.Text = "lblSurname";
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(167, 22);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(53, 20);
+            this.lblTitle.TabIndex = 63;
+            this.lblTitle.Text = "lblTitle";
+            // 
+            // lblFirstName
+            // 
+            this.lblFirstName.AutoSize = true;
+            this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFirstName.Location = new System.Drawing.Point(167, 58);
+            this.lblFirstName.Name = "lblFirstName";
+            this.lblFirstName.Size = new System.Drawing.Size(97, 20);
+            this.lblFirstName.TabIndex = 62;
+            this.lblFirstName.Text = "lblFirstName";
+            // 
+            // lblInitials
+            // 
+            this.lblInitials.AutoSize = true;
+            this.lblInitials.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInitials.Location = new System.Drawing.Point(167, 94);
+            this.lblInitials.Name = "lblInitials";
+            this.lblInitials.Size = new System.Drawing.Size(69, 20);
+            this.lblInitials.TabIndex = 61;
+            this.lblInitials.Text = "lblInitials";
             // 
             // label13
             // 
@@ -222,6 +282,66 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Address";
             // 
+            // lblNumberName
+            // 
+            this.lblNumberName.AutoSize = true;
+            this.lblNumberName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumberName.Location = new System.Drawing.Point(167, 25);
+            this.lblNumberName.Name = "lblNumberName";
+            this.lblNumberName.Size = new System.Drawing.Size(122, 20);
+            this.lblNumberName.TabIndex = 67;
+            this.lblNumberName.Text = "lblNumberName";
+            // 
+            // lblStreetName
+            // 
+            this.lblStreetName.AutoSize = true;
+            this.lblStreetName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStreetName.Location = new System.Drawing.Point(167, 59);
+            this.lblStreetName.Name = "lblStreetName";
+            this.lblStreetName.Size = new System.Drawing.Size(110, 20);
+            this.lblStreetName.TabIndex = 68;
+            this.lblStreetName.Text = "lblStreetName";
+            // 
+            // lblAddressArea
+            // 
+            this.lblAddressArea.AutoSize = true;
+            this.lblAddressArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddressArea.Location = new System.Drawing.Point(167, 93);
+            this.lblAddressArea.Name = "lblAddressArea";
+            this.lblAddressArea.Size = new System.Drawing.Size(117, 20);
+            this.lblAddressArea.TabIndex = 69;
+            this.lblAddressArea.Text = "lblAddressArea";
+            // 
+            // lblCityTown
+            // 
+            this.lblCityTown.AutoSize = true;
+            this.lblCityTown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCityTown.Location = new System.Drawing.Point(167, 127);
+            this.lblCityTown.Name = "lblCityTown";
+            this.lblCityTown.Size = new System.Drawing.Size(88, 20);
+            this.lblCityTown.TabIndex = 70;
+            this.lblCityTown.Text = "lblCityTown";
+            // 
+            // lblCounty
+            // 
+            this.lblCounty.AutoSize = true;
+            this.lblCounty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCounty.Location = new System.Drawing.Point(167, 161);
+            this.lblCounty.Name = "lblCounty";
+            this.lblCounty.Size = new System.Drawing.Size(74, 20);
+            this.lblCounty.TabIndex = 71;
+            this.lblCounty.Text = "lblCounty";
+            // 
+            // lblPostcode
+            // 
+            this.lblPostcode.AutoSize = true;
+            this.lblPostcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPostcode.Location = new System.Drawing.Point(167, 197);
+            this.lblPostcode.Name = "lblPostcode";
+            this.lblPostcode.Size = new System.Drawing.Size(91, 20);
+            this.lblPostcode.TabIndex = 72;
+            this.lblPostcode.Text = "lblPostcode";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -282,132 +402,12 @@
             this.label12.TabIndex = 20;
             this.label12.Text = "Postcode:";
             // 
-            // lblInitials
-            // 
-            this.lblInitials.AutoSize = true;
-            this.lblInitials.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInitials.Location = new System.Drawing.Point(167, 94);
-            this.lblInitials.Name = "lblInitials";
-            this.lblInitials.Size = new System.Drawing.Size(42, 20);
-            this.lblInitials.TabIndex = 61;
-            this.lblInitials.Text = "Title:";
-            // 
-            // lblFirstName
-            // 
-            this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFirstName.Location = new System.Drawing.Point(167, 58);
-            this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(42, 20);
-            this.lblFirstName.TabIndex = 62;
-            this.lblFirstName.Text = "Title:";
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(167, 22);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(42, 20);
-            this.lblTitle.TabIndex = 63;
-            this.lblTitle.Text = "Title:";
-            // 
-            // lblSurname
-            // 
-            this.lblSurname.AutoSize = true;
-            this.lblSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSurname.Location = new System.Drawing.Point(167, 129);
-            this.lblSurname.Name = "lblSurname";
-            this.lblSurname.Size = new System.Drawing.Size(42, 20);
-            this.lblSurname.TabIndex = 64;
-            this.lblSurname.Text = "Title:";
-            // 
-            // lblDob
-            // 
-            this.lblDob.AutoSize = true;
-            this.lblDob.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDob.Location = new System.Drawing.Point(167, 163);
-            this.lblDob.Name = "lblDob";
-            this.lblDob.Size = new System.Drawing.Size(42, 20);
-            this.lblDob.TabIndex = 65;
-            this.lblDob.Text = "Title:";
-            // 
-            // lblPassword
-            // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(167, 197);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(42, 20);
-            this.lblPassword.TabIndex = 66;
-            this.lblPassword.Text = "Title:";
-            // 
-            // lblNumberName
-            // 
-            this.lblNumberName.AutoSize = true;
-            this.lblNumberName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumberName.Location = new System.Drawing.Point(167, 25);
-            this.lblNumberName.Name = "lblNumberName";
-            this.lblNumberName.Size = new System.Drawing.Size(42, 20);
-            this.lblNumberName.TabIndex = 67;
-            this.lblNumberName.Text = "Title:";
-            // 
-            // lblStreetName
-            // 
-            this.lblStreetName.AutoSize = true;
-            this.lblStreetName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStreetName.Location = new System.Drawing.Point(167, 59);
-            this.lblStreetName.Name = "lblStreetName";
-            this.lblStreetName.Size = new System.Drawing.Size(42, 20);
-            this.lblStreetName.TabIndex = 68;
-            this.lblStreetName.Text = "Title:";
-            // 
-            // lblAddressArea
-            // 
-            this.lblAddressArea.AutoSize = true;
-            this.lblAddressArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddressArea.Location = new System.Drawing.Point(167, 93);
-            this.lblAddressArea.Name = "lblAddressArea";
-            this.lblAddressArea.Size = new System.Drawing.Size(42, 20);
-            this.lblAddressArea.TabIndex = 69;
-            this.lblAddressArea.Text = "Title:";
-            // 
-            // lblCityTown
-            // 
-            this.lblCityTown.AutoSize = true;
-            this.lblCityTown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCityTown.Location = new System.Drawing.Point(167, 127);
-            this.lblCityTown.Name = "lblCityTown";
-            this.lblCityTown.Size = new System.Drawing.Size(42, 20);
-            this.lblCityTown.TabIndex = 70;
-            this.lblCityTown.Text = "Title:";
-            // 
-            // lblCounty
-            // 
-            this.lblCounty.AutoSize = true;
-            this.lblCounty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCounty.Location = new System.Drawing.Point(167, 161);
-            this.lblCounty.Name = "lblCounty";
-            this.lblCounty.Size = new System.Drawing.Size(42, 20);
-            this.lblCounty.TabIndex = 71;
-            this.lblCounty.Text = "Title:";
-            // 
-            // lblPostcode
-            // 
-            this.lblPostcode.AutoSize = true;
-            this.lblPostcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPostcode.Location = new System.Drawing.Point(167, 197);
-            this.lblPostcode.Name = "lblPostcode";
-            this.lblPostcode.Size = new System.Drawing.Size(42, 20);
-            this.lblPostcode.TabIndex = 72;
-            this.lblPostcode.Text = "Title:";
-            // 
             // customer_delete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.ClientSize = new System.Drawing.Size(480, 635);
+            this.ClientSize = new System.Drawing.Size(478, 635);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnAddCustomer);
@@ -417,6 +417,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Name = "customer_delete";
             this.Text = "customer_delete";
+            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox2.ResumeLayout(false);
