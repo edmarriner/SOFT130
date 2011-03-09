@@ -119,7 +119,11 @@ namespace SOFT130Project
         {
             int currentSelection;
             currentSelection = txtPostcode.SelectionStart;
-            txtPostcode.Text = (txtPostcode.Text).ToString().ToUpper().Replace(" ", "");
+            txtPostcode.Text = (txtPostcode.Text).ToString().ToUpper();
+
+            Regex alphaNumericOnly = new Regex("[^A-Z0-9]");
+            txtPostcode.Text = alphaNumericOnly.Replace(txtPostcode.Text, "");
+
             txtPostcode.Select(currentSelection, 0);
             Regex postcodePattern = new Regex("^([A-PR-UWYZ0-9][A-HK-Y0-9][AEHMNPRTVXY0-9]?[ABEHMNPRVWXY0-9]{1,2}[0-9][ABD-HJLN-UW-Z]{2}|GIR 0AA)$");
             if (postcodePattern.IsMatch(txtPostcode.Text))
@@ -151,6 +155,15 @@ namespace SOFT130Project
 
         private void validateDoB(object sender, EventArgs e)
         {
+
+            Regex intOnly = new Regex("[^0-9]");
+            int currentSelection = txtDoBDD.SelectionStart;
+            txtDoBDD.Text = intOnly.Replace(txtDoBDD.Text, "");
+            txtDoBDD.Select(currentSelection, 0);
+            currentSelection = txtDoBYYYY.SelectionStart;
+            txtDoBYYYY.Text = intOnly.Replace(txtDoBYYYY.Text, "");
+            txtDoBYYYY.Select(currentSelection, 0);
+
             DateTime Temp;
             string dateWhole;
             bool passed = false;
@@ -163,7 +176,8 @@ namespace SOFT130Project
 
             try
             {
-                if (Convert.ToInt32(txtDoBYYYY.Text) > 1850)
+                int yearInt = Convert.ToInt32(txtDoBYYYY.Text);
+                if (yearInt > 1850 && yearInt <= DateTime.Now.Year)
                 {
                     passed = true;
                 }

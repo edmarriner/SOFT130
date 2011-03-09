@@ -100,6 +100,7 @@
             // 
             this.txtDoBDD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDoBDD.Location = new System.Drawing.Point(167, 161);
+            this.txtDoBDD.MaxLength = 2;
             this.txtDoBDD.Name = "txtDoBDD";
             this.txtDoBDD.Size = new System.Drawing.Size(36, 26);
             this.txtDoBDD.TabIndex = 5;
@@ -292,6 +293,7 @@
             // 
             this.txtPostcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPostcode.Location = new System.Drawing.Point(167, 194);
+            this.txtPostcode.MaxLength = 7;
             this.txtPostcode.Name = "txtPostcode";
             this.txtPostcode.Size = new System.Drawing.Size(83, 26);
             this.txtPostcode.TabIndex = 13;
@@ -314,6 +316,7 @@
             // 
             this.txtDoBYYYY.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDoBYYYY.Location = new System.Drawing.Point(268, 161);
+            this.txtDoBYYYY.MaxLength = 4;
             this.txtDoBYYYY.Name = "txtDoBYYYY";
             this.txtDoBYYYY.Size = new System.Drawing.Size(43, 26);
             this.txtDoBYYYY.TabIndex = 7;
