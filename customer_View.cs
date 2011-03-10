@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace SOFT130Project
 {
-    public partial class customerView : Form
+    public partial class customer_View : Form
     {
-        public customerView()
+        public customer_View()
         {
             InitializeComponent();
         }
