@@ -102,5 +102,15 @@ namespace SOFT130Project
                 pboOverdraftLimit.Image = new Bitmap("cross.png");
             }
         }
+
+        private void lblTime_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -51,38 +51,40 @@
             this.txtCityTown = new System.Windows.Forms.TextBox();
             this.txtDoBYYYY = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pboPostcode = new System.Windows.Forms.PictureBox();
+            this.pboCityTown = new System.Windows.Forms.PictureBox();
+            this.pboStreetName = new System.Windows.Forms.PictureBox();
+            this.pboNumberName = new System.Windows.Forms.PictureBox();
             this.cboCounty = new System.Windows.Forms.ComboBox();
             this.txtNumberName = new System.Windows.Forms.TextBox();
             this.txtAddressArea = new System.Windows.Forms.TextBox();
             this.txtStreetName = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pboPassword = new System.Windows.Forms.PictureBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.lbldate = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pboPassword = new System.Windows.Forms.PictureBox();
             this.pboDoB = new System.Windows.Forms.PictureBox();
             this.pboSurname = new System.Windows.Forms.PictureBox();
             this.pboFirstName = new System.Windows.Forms.PictureBox();
-            this.pboPostcode = new System.Windows.Forms.PictureBox();
-            this.pboCityTown = new System.Windows.Forms.PictureBox();
-            this.pboStreetName = new System.Windows.Forms.PictureBox();
-            this.pboNumberName = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.lblDescription = new System.Windows.Forms.Label();
+            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboPassword)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboDoB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboSurname)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboFirstName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboPostcode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboCityTown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboStreetName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboNumberName)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pboPassword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboDoB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboSurname)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboFirstName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtSurname
@@ -238,7 +240,7 @@
             this.btnAddCustomer.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnAddCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddCustomer.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAddCustomer.Location = new System.Drawing.Point(47, 583);
+            this.btnAddCustomer.Location = new System.Drawing.Point(21, 599);
             this.btnAddCustomer.Name = "btnAddCustomer";
             this.btnAddCustomer.Size = new System.Drawing.Size(132, 33);
             this.btnAddCustomer.TabIndex = 15;
@@ -342,12 +344,48 @@
             this.groupBox1.Controls.Add(this.txtStreetName);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Location = new System.Drawing.Point(27, 323);
+            this.groupBox1.Location = new System.Drawing.Point(21, 356);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(444, 237);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Address";
+            // 
+            // pboPostcode
+            // 
+            this.pboPostcode.Image = ((System.Drawing.Image)(resources.GetObject("pboPostcode.Image")));
+            this.pboPostcode.Location = new System.Drawing.Point(256, 201);
+            this.pboPostcode.Name = "pboPostcode";
+            this.pboPostcode.Size = new System.Drawing.Size(16, 16);
+            this.pboPostcode.TabIndex = 57;
+            this.pboPostcode.TabStop = false;
+            // 
+            // pboCityTown
+            // 
+            this.pboCityTown.Image = ((System.Drawing.Image)(resources.GetObject("pboCityTown.Image")));
+            this.pboCityTown.Location = new System.Drawing.Point(282, 131);
+            this.pboCityTown.Name = "pboCityTown";
+            this.pboCityTown.Size = new System.Drawing.Size(16, 16);
+            this.pboCityTown.TabIndex = 56;
+            this.pboCityTown.TabStop = false;
+            // 
+            // pboStreetName
+            // 
+            this.pboStreetName.Image = ((System.Drawing.Image)(resources.GetObject("pboStreetName.Image")));
+            this.pboStreetName.Location = new System.Drawing.Point(403, 63);
+            this.pboStreetName.Name = "pboStreetName";
+            this.pboStreetName.Size = new System.Drawing.Size(16, 16);
+            this.pboStreetName.TabIndex = 54;
+            this.pboStreetName.TabStop = false;
+            // 
+            // pboNumberName
+            // 
+            this.pboNumberName.Image = ((System.Drawing.Image)(resources.GetObject("pboNumberName.Image")));
+            this.pboNumberName.Location = new System.Drawing.Point(238, 29);
+            this.pboNumberName.Name = "pboNumberName";
+            this.pboNumberName.Size = new System.Drawing.Size(16, 16);
+            this.pboNumberName.TabIndex = 53;
+            this.pboNumberName.TabStop = false;
             // 
             // cboCounty
             // 
@@ -508,12 +546,21 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.cboDoBMM);
             this.groupBox2.Controls.Add(this.cboTitle);
-            this.groupBox2.Location = new System.Drawing.Point(27, 86);
+            this.groupBox2.Location = new System.Drawing.Point(21, 119);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(446, 231);
             this.groupBox2.TabIndex = 20;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Customer Information";
+            // 
+            // pboPassword
+            // 
+            this.pboPassword.Image = global::SOFT130Project.Properties.Resources.cross;
+            this.pboPassword.Location = new System.Drawing.Point(312, 199);
+            this.pboPassword.Name = "pboPassword";
+            this.pboPassword.Size = new System.Drawing.Size(16, 16);
+            this.pboPassword.TabIndex = 61;
+            this.pboPassword.TabStop = false;
             // 
             // txtPassword
             // 
@@ -536,69 +583,6 @@
             this.label13.Size = new System.Drawing.Size(82, 20);
             this.label13.TabIndex = 60;
             this.label13.Text = "Password:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(339, 167);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 16);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "(DDMMMYYYY)";
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCancel.Location = new System.Drawing.Point(194, 583);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(132, 33);
-            this.btnCancel.TabIndex = 16;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // lbldate
-            // 
-            this.lbldate.AutoSize = true;
-            this.lbldate.BackColor = System.Drawing.Color.SkyBlue;
-            this.lbldate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldate.Location = new System.Drawing.Point(279, 16);
-            this.lbldate.Name = "lbldate";
-            this.lbldate.Size = new System.Drawing.Size(172, 20);
-            this.lbldate.TabIndex = 53;
-            this.lbldate.Text = "Add a new customer";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
-            this.pictureBox1.BackgroundImage = global::SOFT130Project.Properties.Resources.hmbc;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(244, 45);
-            this.pictureBox1.TabIndex = 52;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.SkyBlue;
-            this.pictureBox2.Location = new System.Drawing.Point(-2, -7);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(847, 69);
-            this.pictureBox2.TabIndex = 51;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pboPassword
-            // 
-            this.pboPassword.Image = global::SOFT130Project.Properties.Resources.cross;
-            this.pboPassword.Location = new System.Drawing.Point(312, 199);
-            this.pboPassword.Name = "pboPassword";
-            this.pboPassword.Size = new System.Drawing.Size(16, 16);
-            this.pboPassword.TabIndex = 61;
-            this.pboPassword.TabStop = false;
             // 
             // pboDoB
             // 
@@ -627,51 +611,93 @@
             this.pboFirstName.TabIndex = 49;
             this.pboFirstName.TabStop = false;
             // 
-            // pboPostcode
+            // label1
             // 
-            this.pboPostcode.Image = ((System.Drawing.Image)(resources.GetObject("pboPostcode.Image")));
-            this.pboPostcode.Location = new System.Drawing.Point(256, 201);
-            this.pboPostcode.Name = "pboPostcode";
-            this.pboPostcode.Size = new System.Drawing.Size(16, 16);
-            this.pboPostcode.TabIndex = 57;
-            this.pboPostcode.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(339, 167);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(105, 16);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "(DDMMMYYYY)";
             // 
-            // pboCityTown
+            // btnCancel
             // 
-            this.pboCityTown.Image = ((System.Drawing.Image)(resources.GetObject("pboCityTown.Image")));
-            this.pboCityTown.Location = new System.Drawing.Point(282, 131);
-            this.pboCityTown.Name = "pboCityTown";
-            this.pboCityTown.Size = new System.Drawing.Size(16, 16);
-            this.pboCityTown.TabIndex = 56;
-            this.pboCityTown.TabStop = false;
+            this.btnCancel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCancel.Location = new System.Drawing.Point(168, 599);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(132, 33);
+            this.btnCancel.TabIndex = 16;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // pboStreetName
+            // lblDescription
             // 
-            this.pboStreetName.Image = ((System.Drawing.Image)(resources.GetObject("pboStreetName.Image")));
-            this.pboStreetName.Location = new System.Drawing.Point(403, 63);
-            this.pboStreetName.Name = "pboStreetName";
-            this.pboStreetName.Size = new System.Drawing.Size(16, 16);
-            this.pboStreetName.TabIndex = 54;
-            this.pboStreetName.TabStop = false;
+            this.lblDescription.AutoSize = true;
+            this.lblDescription.BackColor = System.Drawing.SystemColors.Control;
+            this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription.Location = new System.Drawing.Point(155, 82);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(172, 20);
+            this.lblDescription.TabIndex = 53;
+            this.lblDescription.Text = "Add a new customer";
             // 
-            // pboNumberName
+            // picLogo
             // 
-            this.pboNumberName.Image = ((System.Drawing.Image)(resources.GetObject("pboNumberName.Image")));
-            this.pboNumberName.Location = new System.Drawing.Point(238, 29);
-            this.pboNumberName.Name = "pboNumberName";
-            this.pboNumberName.Size = new System.Drawing.Size(16, 16);
-            this.pboNumberName.TabIndex = 53;
-            this.pboNumberName.TabStop = false;
+            this.picLogo.BackColor = System.Drawing.Color.SkyBlue;
+            this.picLogo.BackgroundImage = global::SOFT130Project.Properties.Resources.hmbc;
+            this.picLogo.Location = new System.Drawing.Point(6, 7);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(244, 45);
+            this.picLogo.TabIndex = 52;
+            this.picLogo.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.SkyBlue;
+            this.pictureBox2.Location = new System.Drawing.Point(-2, -7);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(498, 69);
+            this.pictureBox2.TabIndex = 51;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.BackColor = System.Drawing.Color.SkyBlue;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Location = new System.Drawing.Point(434, 9);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(44, 20);
+            this.lblDate.TabIndex = 54;
+            this.lblDate.Text = "Date";
+            // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.BackColor = System.Drawing.Color.SkyBlue;
+            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.Location = new System.Drawing.Point(434, 32);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(43, 20);
+            this.lblTime.TabIndex = 55;
+            this.lblTime.Text = "Time";
             // 
             // frmCustomerAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(493, 628);
-            this.Controls.Add(this.lbldate);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(493, 644);
+            this.Controls.Add(this.lblTime);
+            this.Controls.Add(this.lblDate);
+            this.Controls.Add(this.lblDescription);
+            this.Controls.Add(this.picLogo);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.groupBox2);
@@ -688,18 +714,18 @@
             this.Load += new System.EventHandler(this.frmCustomerAdd_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboPassword)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboDoB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboSurname)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboFirstName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboPostcode)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboCityTown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboStreetName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboNumberName)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pboPassword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboDoB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboSurname)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboFirstName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -735,8 +761,8 @@
         private System.Windows.Forms.TextBox txtStreetName;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lbldate;
+        private System.Windows.Forms.PictureBox picLogo;
+        private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cboCounty;
         private System.Windows.Forms.PictureBox pboFirstName;
@@ -749,5 +775,7 @@
         private System.Windows.Forms.PictureBox pboPassword;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.Label lblTime;
     }
 }

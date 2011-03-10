@@ -41,14 +41,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lbldate = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.pboAccountName = new System.Windows.Forms.PictureBox();
             this.pboSortCode = new System.Windows.Forms.PictureBox();
             this.pboOverdraftLimit = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblDescription = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboAccountName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboSortCode)).BeginInit();
@@ -60,7 +61,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 86);
+            this.label1.Location = new System.Drawing.Point(22, 128);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 20);
             this.label1.TabIndex = 99;
@@ -70,7 +71,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(55, 124);
+            this.label2.Location = new System.Drawing.Point(55, 166);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 20);
             this.label2.TabIndex = 99;
@@ -80,7 +81,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(24, 164);
+            this.label3.Location = new System.Drawing.Point(24, 206);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 20);
             this.label3.TabIndex = 99;
@@ -91,7 +92,7 @@
             this.btnAddAccount.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnAddAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddAccount.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAddAccount.Location = new System.Drawing.Point(8, 204);
+            this.btnAddAccount.Location = new System.Drawing.Point(8, 246);
             this.btnAddAccount.Name = "btnAddAccount";
             this.btnAddAccount.Size = new System.Drawing.Size(132, 33);
             this.btnAddAccount.TabIndex = 6;
@@ -102,7 +103,7 @@
             // txtAccountName
             // 
             this.txtAccountName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAccountName.Location = new System.Drawing.Point(146, 83);
+            this.txtAccountName.Location = new System.Drawing.Point(146, 125);
             this.txtAccountName.Name = "txtAccountName";
             this.txtAccountName.Size = new System.Drawing.Size(169, 26);
             this.txtAccountName.TabIndex = 1;
@@ -113,7 +114,7 @@
             // txtOverdraftLimit
             // 
             this.txtOverdraftLimit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOverdraftLimit.Location = new System.Drawing.Point(162, 161);
+            this.txtOverdraftLimit.Location = new System.Drawing.Point(162, 203);
             this.txtOverdraftLimit.Name = "txtOverdraftLimit";
             this.txtOverdraftLimit.Size = new System.Drawing.Size(116, 26);
             this.txtOverdraftLimit.TabIndex = 5;
@@ -123,7 +124,7 @@
             // txtSortCode1
             // 
             this.txtSortCode1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSortCode1.Location = new System.Drawing.Point(146, 121);
+            this.txtSortCode1.Location = new System.Drawing.Point(146, 163);
             this.txtSortCode1.Name = "txtSortCode1";
             this.txtSortCode1.Size = new System.Drawing.Size(37, 26);
             this.txtSortCode1.TabIndex = 2;
@@ -134,7 +135,7 @@
             // txtSortCode2
             // 
             this.txtSortCode2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSortCode2.Location = new System.Drawing.Point(193, 121);
+            this.txtSortCode2.Location = new System.Drawing.Point(193, 163);
             this.txtSortCode2.Name = "txtSortCode2";
             this.txtSortCode2.Size = new System.Drawing.Size(37, 26);
             this.txtSortCode2.TabIndex = 3;
@@ -145,7 +146,7 @@
             // txtSortCode3
             // 
             this.txtSortCode3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSortCode3.Location = new System.Drawing.Point(241, 120);
+            this.txtSortCode3.Location = new System.Drawing.Point(241, 162);
             this.txtSortCode3.Name = "txtSortCode3";
             this.txtSortCode3.Size = new System.Drawing.Size(37, 26);
             this.txtSortCode3.TabIndex = 4;
@@ -157,7 +158,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(145, 164);
+            this.label4.Location = new System.Drawing.Point(145, 206);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(18, 20);
             this.label4.TabIndex = 44;
@@ -167,7 +168,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(180, 124);
+            this.label5.Location = new System.Drawing.Point(180, 166);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(14, 20);
             this.label5.TabIndex = 45;
@@ -177,7 +178,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(229, 123);
+            this.label6.Location = new System.Drawing.Point(229, 165);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(14, 20);
             this.label6.TabIndex = 46;
@@ -192,24 +193,13 @@
             this.pictureBox2.TabIndex = 52;
             this.pictureBox2.TabStop = false;
             // 
-            // lbldate
-            // 
-            this.lbldate.AutoSize = true;
-            this.lbldate.BackColor = System.Drawing.Color.SkyBlue;
-            this.lbldate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldate.Location = new System.Drawing.Point(265, 34);
-            this.lbldate.Name = "lbldate";
-            this.lbldate.Size = new System.Drawing.Size(75, 20);
-            this.lbldate.TabIndex = 54;
-            this.lbldate.Text = "Account";
-            // 
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCancel.Location = new System.Drawing.Point(149, 204);
+            this.btnCancel.Location = new System.Drawing.Point(149, 246);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(132, 33);
             this.btnCancel.TabIndex = 7;
@@ -228,7 +218,7 @@
             // pboAccountName
             // 
             this.pboAccountName.Image = global::SOFT130Project.Properties.Resources.cross;
-            this.pboAccountName.Location = new System.Drawing.Point(321, 87);
+            this.pboAccountName.Location = new System.Drawing.Point(321, 129);
             this.pboAccountName.Name = "pboAccountName";
             this.pboAccountName.Size = new System.Drawing.Size(16, 16);
             this.pboAccountName.TabIndex = 101;
@@ -237,7 +227,7 @@
             // pboSortCode
             // 
             this.pboSortCode.Image = global::SOFT130Project.Properties.Resources.cross;
-            this.pboSortCode.Location = new System.Drawing.Point(284, 125);
+            this.pboSortCode.Location = new System.Drawing.Point(284, 167);
             this.pboSortCode.Name = "pboSortCode";
             this.pboSortCode.Size = new System.Drawing.Size(16, 16);
             this.pboSortCode.TabIndex = 102;
@@ -246,7 +236,7 @@
             // pboOverdraftLimit
             // 
             this.pboOverdraftLimit.Image = global::SOFT130Project.Properties.Resources.cross;
-            this.pboOverdraftLimit.Location = new System.Drawing.Point(284, 166);
+            this.pboOverdraftLimit.Location = new System.Drawing.Point(284, 208);
             this.pboOverdraftLimit.Name = "pboOverdraftLimit";
             this.pboOverdraftLimit.Size = new System.Drawing.Size(16, 16);
             this.pboOverdraftLimit.TabIndex = 103;
@@ -256,38 +246,63 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
             this.pictureBox1.BackgroundImage = global::SOFT130Project.Properties.Resources.hmbc;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 11);
+            this.pictureBox1.Location = new System.Drawing.Point(1, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(244, 45);
             this.pictureBox1.TabIndex = 120;
             this.pictureBox1.TabStop = false;
             // 
-            // label7
+            // lblDescription
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.SkyBlue;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(280, 11);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 20);
-            this.label7.TabIndex = 121;
-            this.label7.Text = "Add";
+            this.lblDescription.AutoSize = true;
+            this.lblDescription.BackColor = System.Drawing.SystemColors.Control;
+            this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription.Location = new System.Drawing.Point(118, 85);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(112, 20);
+            this.lblDescription.TabIndex = 121;
+            this.lblDescription.Text = "Add Account";
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.BackColor = System.Drawing.Color.SkyBlue;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Location = new System.Drawing.Point(296, 9);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(44, 20);
+            this.lblDate.TabIndex = 122;
+            this.lblDate.Text = "Date";
+            this.lblDate.Click += new System.EventHandler(this.lblDate_Click);
+            // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.BackColor = System.Drawing.Color.SkyBlue;
+            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.Location = new System.Drawing.Point(296, 37);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(43, 20);
+            this.lblTime.TabIndex = 123;
+            this.lblTime.Text = "Time";
+            this.lblTime.Click += new System.EventHandler(this.lblTime_Click);
             // 
             // frmAccountAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(355, 253);
-            this.Controls.Add(this.label7);
+            this.ClientSize = new System.Drawing.Size(355, 288);
+            this.Controls.Add(this.lblTime);
+            this.Controls.Add(this.lblDate);
+            this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pboOverdraftLimit);
             this.Controls.Add(this.pboSortCode);
             this.Controls.Add(this.pboAccountName);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.lbldate);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -334,13 +349,14 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label lbldate;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.PictureBox pboAccountName;
         private System.Windows.Forms.PictureBox pboSortCode;
         private System.Windows.Forms.PictureBox pboOverdraftLimit;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblDescription;
+        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.Label lblTime;
     }
 }
