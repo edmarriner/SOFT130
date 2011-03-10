@@ -64,6 +64,12 @@
     <Compile Include="account_delete.Designer.cs">
       <DependentUpon>account_delete.cs</DependentUpon>
     </Compile>
+    <Compile Include="customer_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer_View.designer.cs">
+      <DependentUpon>customer_View.cs</DependentUpon>
+    </Compile>
     <Compile Include="customer_delete.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,12 @@
     </Compile>
     <Compile Include="main.Designer.cs">
       <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="passwordPrompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="passwordPrompt.designer.cs">
+      <DependentUpon>passwordPrompt.cs</DependentUpon>
     </Compile>
     <Compile Include="transaction_add.cs">
       <SubType>Form</SubType>
@@ -114,11 +126,17 @@
     <EmbeddedResource Include="account_delete.resx">
       <DependentUpon>account_delete.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="customer_View.resx">
+      <DependentUpon>customer_View.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="customer_delete.resx">
       <DependentUpon>customer_delete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="passwordPrompt.resx">
+      <DependentUpon>passwordPrompt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="transaction_add.resx">
       <DependentUpon>transaction_add.cs</DependentUpon>

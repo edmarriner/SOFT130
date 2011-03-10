@@ -63,7 +63,7 @@
             this.btnExistingCustomer.Name = "btnExistingCustomer";
             this.btnExistingCustomer.Size = new System.Drawing.Size(199, 117);
             this.btnExistingCustomer.TabIndex = 1;
-            this.btnExistingCustomer.Text = "Existing Customer";
+            this.btnExistingCustomer.Text = "Search For Customer";
             this.btnExistingCustomer.UseVisualStyleBackColor = false;
             this.btnExistingCustomer.Click += new System.EventHandler(this.btnExistingCustomer_Click);
             // 
