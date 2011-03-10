@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(passwordPrompt));
             this.lblDescription = new System.Windows.Forms.Label();
-            this.picLogo = new System.Windows.Forms.PictureBox();
             this.picHeader = new System.Windows.Forms.PictureBox();
             this.txtFirstPasswordCharacter = new System.Windows.Forms.TextBox();
             this.lblFirstPasswordCharacter = new System.Windows.Forms.Label();
@@ -41,30 +39,21 @@
             this.btnVerify = new System.Windows.Forms.Button();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picHeader)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDescription
             // 
             this.lblDescription.AutoSize = true;
-            this.lblDescription.BackColor = System.Drawing.Color.SkyBlue;
+            this.lblDescription.BackColor = System.Drawing.SystemColors.Control;
             this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescription.Location = new System.Drawing.Point(213, 21);
+            this.lblDescription.Location = new System.Drawing.Point(130, 75);
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(86, 20);
             this.lblDescription.TabIndex = 50;
             this.lblDescription.Text = "Password";
-            // 
-            // picLogo
-            // 
-            this.picLogo.BackColor = System.Drawing.Color.SkyBlue;
-            this.picLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picLogo.BackgroundImage")));
-            this.picLogo.Location = new System.Drawing.Point(32, 0);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(146, 60);
-            this.picLogo.TabIndex = 49;
-            this.picLogo.TabStop = false;
             // 
             // picHeader
             // 
@@ -144,8 +133,9 @@
             // lblDate
             // 
             this.lblDate.AutoSize = true;
+            this.lblDate.BackColor = System.Drawing.Color.SkyBlue;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(12, 75);
+            this.lblDate.Location = new System.Drawing.Point(283, 8);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(44, 20);
             this.lblDate.TabIndex = 60;
@@ -154,18 +144,30 @@
             // lblTime
             // 
             this.lblTime.AutoSize = true;
+            this.lblTime.BackColor = System.Drawing.Color.SkyBlue;
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(283, 75);
+            this.lblTime.Location = new System.Drawing.Point(284, 33);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(43, 20);
             this.lblTime.TabIndex = 61;
             this.lblTime.Text = "Time";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
+            this.pictureBox1.BackgroundImage = global::SOFT130Project.Properties.Resources.hmbc;
+            this.pictureBox1.Location = new System.Drawing.Point(7, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(244, 45);
+            this.pictureBox1.TabIndex = 123;
+            this.pictureBox1.TabStop = false;
             // 
             // passwordPrompt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(338, 218);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblTime);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.btnVerify);
@@ -176,12 +178,11 @@
             this.Controls.Add(this.txtFirstPasswordCharacter);
             this.Controls.Add(this.lblFirstPasswordCharacter);
             this.Controls.Add(this.lblDescription);
-            this.Controls.Add(this.picLogo);
             this.Controls.Add(this.picHeader);
             this.Name = "passwordPrompt";
             this.Text = "passwordPrompt";
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHeader)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,7 +191,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblDescription;
-        private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.PictureBox picHeader;
         private System.Windows.Forms.TextBox txtFirstPasswordCharacter;
         private System.Windows.Forms.Label lblFirstPasswordCharacter;
@@ -201,5 +201,6 @@
         private System.Windows.Forms.Button btnVerify;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblTime;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
