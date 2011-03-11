@@ -29,16 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainMenu));
             this.btnNewCustomer = new System.Windows.Forms.Button();
             this.btnExistingCustomer = new System.Windows.Forms.Button();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tmrDateTime = new System.Windows.Forms.Timer(this.components);
             this.btnExit = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -73,7 +72,7 @@
             this.lblDate.BackColor = System.Drawing.Color.SkyBlue;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblDate.Location = new System.Drawing.Point(410, 9);
+            this.lblDate.Location = new System.Drawing.Point(42, 70);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(35, 16);
             this.lblDate.TabIndex = 4;
@@ -85,7 +84,7 @@
             this.lblTime.BackColor = System.Drawing.Color.SkyBlue;
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTime.Location = new System.Drawing.Point(345, 45);
+            this.lblTime.Location = new System.Drawing.Point(313, 70);
             this.lblTime.MinimumSize = new System.Drawing.Size(100, 0);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(100, 16);
@@ -101,16 +100,6 @@
             this.pictureBox2.Size = new System.Drawing.Size(461, 100);
             this.pictureBox2.TabIndex = 45;
             this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, -2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(242, 100);
-            this.pictureBox1.TabIndex = 46;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -140,6 +129,16 @@
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
+            this.pictureBox1.Image = global::SOFT130Project.Properties.Resources.hmbcmain;
+            this.pictureBox1.Location = new System.Drawing.Point(38, -2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(384, 100);
+            this.pictureBox1.TabIndex = 46;
+            this.pictureBox1.TabStop = false;
             // 
             // frmMainMenu
             // 
@@ -175,10 +174,10 @@
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer tmrDateTime;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

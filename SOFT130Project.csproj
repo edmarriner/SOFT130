@@ -64,6 +64,12 @@
     <Compile Include="account_delete.Designer.cs">
       <DependentUpon>account_delete.cs</DependentUpon>
     </Compile>
+    <Compile Include="account_view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="account_view.designer.cs">
+      <DependentUpon>account_view.cs</DependentUpon>
+    </Compile>
     <Compile Include="customer_View.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,17 +120,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="transaction_delete.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="transaction_delete.Designer.cs">
-      <DependentUpon>transaction_delete.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="account_add.resx">
       <DependentUpon>account_add.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="account_delete.resx">
       <DependentUpon>account_delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="account_view.resx">
+      <DependentUpon>account_view.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="customer_View.resx">
       <DependentUpon>customer_View.cs</DependentUpon>
@@ -160,9 +163,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="transaction_delete.resx">
-      <DependentUpon>transaction_delete.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
