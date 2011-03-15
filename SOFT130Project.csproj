@@ -66,6 +66,12 @@
       <DependentUpon>account_delete.cs</DependentUpon>
     </Compile>
     <Compile Include="customer.cs" />
+    <Compile Include="account_view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="account_view.designer.cs">
+      <DependentUpon>account_view.cs</DependentUpon>
+    </Compile>
     <Compile Include="customer_View.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="account_delete.resx">
       <DependentUpon>account_delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="account_view.resx">
+      <DependentUpon>account_view.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="customer_View.resx">
       <DependentUpon>customer_View.cs</DependentUpon>
