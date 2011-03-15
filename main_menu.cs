@@ -51,7 +51,25 @@ namespace SOFT130Project
 
         private void button1_Click(object sender, EventArgs e)
         {
+            textBox1.Text = "";
             ArrayList returnedData = fileHandling.readFile();
+
+            foreach (Customer oneCustomer in returnedData)
+            {
+                textBox1.Text += "Customer: " + oneCustomer.getfirstName() + " " + oneCustomer.getsurname() + Environment.NewLine;
+
+                foreach (Account oneAccount in oneCustomer.getaccountList())
+                {
+                    textBox1.Text += "     Account: " + oneAccount.getaccountNumber() + " (" + oneAccount.getnickName() + ") " + Environment.NewLine;
+
+                    foreach (Transaction oneTransaction in oneAccount.gettransactionList())
+                    {
+                        textBox1.Text += "          Transaction: " + oneTransaction.getdescription() + " " + String.Format("{0:c}", oneTransaction.getamount()) + Environment.NewLine;
+                    }
+
+                }
+
+            }
 
           
 

@@ -78,30 +78,35 @@ namespace SOFT130Project
                                 Convert.ToDecimal(tempTransactionData[3]), 
                                 Convert.ToDecimal(tempTransactionData[4])
                             );
-
+                      
                         tempTransactionData.Clear();
                         tempTransactionList.Add(thisTransaction);
 
                         if (loopCount[currentType] >= numLoops["transaction"])
                         {
                             //All transactions finished, add to account.
+
+                           
+
                             Account thisAccount = new Account(Convert.ToString(tempAccountData[0]),
                                        Convert.ToInt64(tempAccountData[1]),
                                        Convert.ToString(tempAccountData[2]),
                                        Convert.ToString(tempAccountData[3]),
                                        Convert.ToDecimal(tempAccountData[4]),
                                        Convert.ToDecimal(tempAccountData[5]),
-                                       Convert.ToInt32(tempAccountData[6]),
-                                       tempTransactionList
+                                       Convert.ToInt32(tempAccountData[6])
                                    );
 
                             tempAccountList.Add(thisAccount);
                             tempAccountData.Clear();
-                            //tempTransactionList.Clear();
+                           
 
                             if (loopCount["account"] >= numLoops["account"])
                             {
                                 //All accounts finished. Add to customer
+
+                             
+
                                 Customer thisCustomer = new Customer(Convert.ToInt32(tempCustomerData[0]),
                                         Convert.ToString(tempCustomerData[1]),
                                         Convert.ToString(tempCustomerData[2]),
@@ -115,12 +120,13 @@ namespace SOFT130Project
                                         Convert.ToString(tempCustomerData[10]),
                                         Convert.ToString(tempCustomerData[11]),
                                         Convert.ToString(tempCustomerData[12]),
-                                        tempAccountList
+                                        Convert.ToInt32(tempCustomerData[13])
                                     );
 
+                            
                                 fileData.Add(thisCustomer);
                                 tempCustomerData.Clear();
-                                //tempAccountList.Clear();
+                                
 
                                 //Finished this customer completely, setup for new customer.
                                 currentType = "customer";
@@ -142,10 +148,31 @@ namespace SOFT130Project
                     lineCount = 0;
 
                 }
-
+                
             }
 
             file.Close();
+
+            int nextAccount = 0;
+            int numAccounts = 0;
+            int nextTransaction = 0;
+            int numTransactions = 0;
+
+            foreach(Customer oneCustomer in fileData){
+
+                numAccounts = oneCustomer.getnumAccounts();
+                oneCustomer.setaccountList(tempAccountList.GetRange(nextAccount, numAccounts));
+                nextAccount = nextAccount + numAccounts;
+
+                foreach(Account oneAccount in oneCustomer.getaccountList()){
+                    numTransactions = oneAccount.getnumTransasctions();
+                    oneAccount.settransactionList(tempTransactionList.GetRange(nextTransaction, numTransactions));
+                    nextTransaction = nextTransaction + numTransactions;
+                }
+
+            }
+
+
 
             return fileData;
             //return TEMPreturnString;

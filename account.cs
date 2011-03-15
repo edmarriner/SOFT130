@@ -15,12 +15,13 @@ namespace SOFT130Project
         private string dateCreated;
         private decimal currentBalance;
         private decimal overdraftLimit;
-        private int numberOfTransasctions;
+        private int numTransasctions;
+
         private ArrayList transactionList;
 
         public Account(string this_sortCode, long this_accountNumber, string this_nickName,
                 string this_dateCreated, decimal this_currentBalance, decimal this_overdraftLimit,
-                int this_numberOfTransasctions, ArrayList this_transactionList)
+                int this_numTransasctions)
         {
             sortCode = this_sortCode;
             accountNumber = this_accountNumber;
@@ -28,10 +29,18 @@ namespace SOFT130Project
             dateCreated = this_dateCreated;
             currentBalance = this_currentBalance;
             overdraftLimit = this_overdraftLimit;
-            numberOfTransasctions = this_numberOfTransasctions;
-            transactionList = this_transactionList;
+            numTransasctions = this_numTransasctions;
+           
         }
 
+        //all public 'setter' methods
+        public void settransactionList(ArrayList this_transactionList)
+        {
+            transactionList = this_transactionList;
+        }  
+
+
+        //all public 'getter' methods
         public string getsortCode()
         {
             return sortCode;
@@ -62,9 +71,9 @@ namespace SOFT130Project
             return overdraftLimit;
         }
 
-        public int getnumberOfTransasctions()
+        public int getnumTransasctions()
         {
-            return numberOfTransasctions;
+            return numTransasctions;
         }
 
         public ArrayList gettransactionList()

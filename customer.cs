@@ -21,6 +21,7 @@ namespace SOFT130Project
         private string county;
         private string postcode;
         private string password;
+        private int numAccounts;
         private ArrayList accountList;
 
         //constructor
@@ -28,7 +29,7 @@ namespace SOFT130Project
                 string this_initials, string this_surname, string this_dob, 
                 string this_houseNameNumber, string this_streetName, string this_addressArea, 
                 string this_cityTown, string this_county, string this_postcode, 
-                string this_password, ArrayList this_accountList)
+                string this_password, int this_numAccounts)
         {
             ID = this_ID;
             title = this_title;
@@ -43,10 +44,21 @@ namespace SOFT130Project
             county = this_county;
             postcode = this_postcode;
             password = this_password;
-            accountList = this_accountList;
+            numAccounts = this_numAccounts;
+        }
+
+        //all class 'setter' methods
+        public void setaccountList(ArrayList this_accountlist)
+        {
+            accountList = this_accountlist;
         }
 
         //all class 'getter' methods
+        public int getnumAccounts()
+        {
+            return numAccounts;
+        }
+
         public int getID()
         {
             return ID;
