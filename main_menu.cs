@@ -71,9 +71,6 @@ namespace SOFT130Project
 
             }
 
-          
-
-            //textBox1.Text = returnedData;
         }
 
     }

@@ -17,12 +17,11 @@ namespace SOFT130Project
             int lineCount = 0;
             string currentType = "customer";
             string line;
-            string TEMPreturnString = "";
+
             ArrayList fileData = new ArrayList();
             ArrayList tempCustomerData = new ArrayList();
             ArrayList tempAccountData = new ArrayList();
             ArrayList tempTransactionData = new ArrayList();
-
             ArrayList tempAccountList = new ArrayList();
             ArrayList tempTransactionList = new ArrayList();
 
@@ -31,15 +30,17 @@ namespace SOFT130Project
             linesPerType.Add("account", 8); loopCount.Add("account", 0); numLoops.Add("account", 0);
             linesPerType.Add("transaction", 6); loopCount.Add("transaction", 0); numLoops.Add("transaction", 0);
 
+            //Load the file then loop until there are no lines left
             System.IO.StreamReader file = new System.IO.StreamReader("e-Softies.txt");
             while ((line = file.ReadLine()) != null)
             {
+                //Incriment the line number, remove any whitespace at the start/end of lines
+                //Stop if the line is blank
                 lineCount++;
                 line = line.Trim();
                 if (line == "") { break; }
 
-                TEMPreturnString += currentType + " - \t" + line + Environment.NewLine;
-
+                //Put the line in the various ArrayLists depending on what we are doing at the moment
                 if (currentType == "customer")
                 {
                     tempCustomerData.Add(line);
@@ -53,10 +54,11 @@ namespace SOFT130Project
                     tempTransactionData.Add(line);
                 }
 
+                //Have we reached the end of this type?
                 if (lineCount >= linesPerType[currentType] - 1)
                 {
-                    TEMPreturnString += Environment.NewLine;
-
+                    
+                    //Change the type to whatever is next, and setup the number of loops required
                     if (currentType == "customer")
                     {
                         currentType = "account";
@@ -70,7 +72,8 @@ namespace SOFT130Project
                     else
                     {
 
-                        //End of Transaction.
+                        //We have come to the end of a single transaction
+                        //Put the data in the class
 
                         Transaction thisTransaction = new Transaction(Convert.ToString(tempTransactionData[0]), 
                                 Convert.ToString(tempTransactionData[1]), 
@@ -79,15 +82,16 @@ namespace SOFT130Project
                                 Convert.ToDecimal(tempTransactionData[4])
                             );
                       
+
+                        //Clear the data ArrayList ready for the next transaction, and add the data in the class to
+                        //a list
                         tempTransactionData.Clear();
                         tempTransactionList.Add(thisTransaction);
 
+                        //Have all the transactions finished?
                         if (loopCount[currentType] >= numLoops["transaction"])
                         {
-                            //All transactions finished, add to account.
-
-                           
-
+                            //Add them to the account, along with the data for that account
                             Account thisAccount = new Account(Convert.ToString(tempAccountData[0]),
                                        Convert.ToInt64(tempAccountData[1]),
                                        Convert.ToString(tempAccountData[2]),
@@ -103,10 +107,8 @@ namespace SOFT130Project
 
                             if (loopCount["account"] >= numLoops["account"])
                             {
-                                //All accounts finished. Add to customer
-
-                             
-
+                                //All accounts finished. Add to customer.
+                         
                                 Customer thisCustomer = new Customer(Convert.ToInt32(tempCustomerData[0]),
                                         Convert.ToString(tempCustomerData[1]),
                                         Convert.ToString(tempCustomerData[2]),
@@ -137,20 +139,25 @@ namespace SOFT130Project
                             }
                             else
                             {
-                                //Finished this account ONLY, there are more to be imported.
+                                //Finished this account, there are more to be imported.
                                 currentType = "account";
                                 loopCount["transaction"] = 0;
                             }
                         }
+
+
+                        //Inc the current loop
                         loopCount[currentType]++;
                     }
 
+                    //Reset the line count to zero (as we have changed type)
                     lineCount = 0;
 
                 }
                 
             }
 
+            //Close the file for use later
             file.Close();
 
             int nextAccount = 0;
@@ -158,12 +165,14 @@ namespace SOFT130Project
             int nextTransaction = 0;
             int numTransactions = 0;
 
+            //Put the customers accounts in the customer class
             foreach(Customer oneCustomer in fileData){
 
                 numAccounts = oneCustomer.getnumAccounts();
                 oneCustomer.setaccountList(tempAccountList.GetRange(nextAccount, numAccounts));
                 nextAccount = nextAccount + numAccounts;
 
+                //Put the transactions for each account in the correct class
                 foreach(Account oneAccount in oneCustomer.getaccountList()){
                     numTransactions = oneAccount.getnumTransasctions();
                     oneAccount.settransactionList(tempTransactionList.GetRange(nextTransaction, numTransactions));
@@ -172,11 +181,9 @@ namespace SOFT130Project
 
             }
 
-
-
+            //Send the whole data back to where it was requested!
             return fileData;
-            //return TEMPreturnString;
-
+           
         }
 
     }

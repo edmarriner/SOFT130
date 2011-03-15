@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainMenu));
             this.btnNewCustomer = new System.Windows.Forms.Button();
             this.btnExistingCustomer = new System.Windows.Forms.Button();
             this.lblDate = new System.Windows.Forms.Label();
@@ -107,10 +106,10 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, -2);
+            this.pictureBox1.Image = global::SOFT130Project.Properties.Resources.hmbcmain;
+            this.pictureBox1.Location = new System.Drawing.Point(39, -2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(242, 100);
+            this.pictureBox1.Size = new System.Drawing.Size(380, 80);
             this.pictureBox1.TabIndex = 46;
             this.pictureBox1.TabStop = false;
             // 
