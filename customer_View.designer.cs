@@ -48,24 +48,24 @@
             this.lblCustomerHouseNameOrNum = new System.Windows.Forms.Label();
             this.lblHouseNameOrNum = new System.Windows.Forms.Label();
             this.grpCustomer = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblCustomerDOB = new System.Windows.Forms.Label();
-            this.lblDOB = new System.Windows.Forms.Label();
-            this.lblCustomerName = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
             this.grpAccounts = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bntEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblCustomerName = new System.Windows.Forms.Label();
+            this.lblDOB = new System.Windows.Forms.Label();
+            this.lblCustomerDOB = new System.Windows.Forms.Label();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.picHeader)).BeginInit();
             this.grpAddress.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.grpCustomer.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             this.grpAccounts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTime
@@ -297,65 +297,6 @@
             this.grpCustomer.TabStop = false;
             this.grpCustomer.Text = "Customer";
             // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.30682F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.69318F));
-            this.tableLayoutPanel2.Controls.Add(this.lblCustomerDOB, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lblDOB, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lblCustomerName, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.lblName, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(11, 19);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(352, 47);
-            this.tableLayoutPanel2.TabIndex = 78;
-            // 
-            // lblCustomerDOB
-            // 
-            this.lblCustomerDOB.AutoSize = true;
-            this.lblCustomerDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerDOB.Location = new System.Drawing.Point(166, 23);
-            this.lblCustomerDOB.Name = "lblCustomerDOB";
-            this.lblCustomerDOB.Size = new System.Drawing.Size(89, 20);
-            this.lblCustomerDOB.TabIndex = 75;
-            this.lblCustomerDOB.Text = "15/07/1991";
-            // 
-            // lblDOB
-            // 
-            this.lblDOB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDOB.AutoSize = true;
-            this.lblDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDOB.Location = new System.Drawing.Point(112, 23);
-            this.lblDOB.Name = "lblDOB";
-            this.lblDOB.Size = new System.Drawing.Size(48, 20);
-            this.lblDOB.TabIndex = 76;
-            this.lblDOB.Text = "DOB:";
-            // 
-            // lblCustomerName
-            // 
-            this.lblCustomerName.AutoSize = true;
-            this.lblCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerName.Location = new System.Drawing.Point(166, 0);
-            this.lblCustomerName.Name = "lblCustomerName";
-            this.lblCustomerName.Size = new System.Drawing.Size(74, 20);
-            this.lblCustomerName.TabIndex = 74;
-            this.lblCustomerName.Text = "Jake Hall";
-            // 
-            // lblName
-            // 
-            this.lblName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(105, 0);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(55, 20);
-            this.lblName.TabIndex = 77;
-            this.lblName.Text = "Name:";
-            // 
             // grpAccounts
             // 
             this.grpAccounts.Controls.Add(this.dataGridView1);
@@ -408,6 +349,65 @@
             this.pictureBox1.TabIndex = 122;
             this.pictureBox1.TabStop = false;
             // 
+            // lblName
+            // 
+            this.lblName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(105, 0);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(55, 20);
+            this.lblName.TabIndex = 77;
+            this.lblName.Text = "Name:";
+            // 
+            // lblCustomerName
+            // 
+            this.lblCustomerName.AutoSize = true;
+            this.lblCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerName.Location = new System.Drawing.Point(166, 0);
+            this.lblCustomerName.Name = "lblCustomerName";
+            this.lblCustomerName.Size = new System.Drawing.Size(74, 20);
+            this.lblCustomerName.TabIndex = 74;
+            this.lblCustomerName.Text = "Jake Hall";
+            // 
+            // lblDOB
+            // 
+            this.lblDOB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDOB.AutoSize = true;
+            this.lblDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDOB.Location = new System.Drawing.Point(112, 23);
+            this.lblDOB.Name = "lblDOB";
+            this.lblDOB.Size = new System.Drawing.Size(48, 20);
+            this.lblDOB.TabIndex = 76;
+            this.lblDOB.Text = "DOB:";
+            // 
+            // lblCustomerDOB
+            // 
+            this.lblCustomerDOB.AutoSize = true;
+            this.lblCustomerDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerDOB.Location = new System.Drawing.Point(166, 23);
+            this.lblCustomerDOB.Name = "lblCustomerDOB";
+            this.lblCustomerDOB.Size = new System.Drawing.Size(89, 20);
+            this.lblCustomerDOB.TabIndex = 75;
+            this.lblCustomerDOB.Text = "15/07/1991";
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.30682F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.69318F));
+            this.tableLayoutPanel2.Controls.Add(this.lblCustomerDOB, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lblDOB, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lblCustomerName, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lblName, 0, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(11, 19);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(352, 47);
+            this.tableLayoutPanel2.TabIndex = 78;
+            // 
             // customer_View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -431,11 +431,11 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.grpCustomer.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
             this.grpAccounts.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -453,10 +453,6 @@
         private System.Windows.Forms.GroupBox grpAccounts;
         private System.Windows.Forms.Button bntEdit;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Label lblCustomerDOB;
-        private System.Windows.Forms.Label lblCustomerName;
-        private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.Label lblDOB;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label lblCustomerCounty;
         private System.Windows.Forms.Label lblCounty;
@@ -469,9 +465,13 @@
         private System.Windows.Forms.Label lblCustomerHouseNameOrNum;
         private System.Windows.Forms.Label lblHouseNameOrNum;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label lblPostcode;
         private System.Windows.Forms.Label lblCustomerPostcode;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label lblCustomerDOB;
+        private System.Windows.Forms.Label lblDOB;
+        private System.Windows.Forms.Label lblCustomerName;
+        private System.Windows.Forms.Label lblName;
     }
 }

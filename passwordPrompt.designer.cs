@@ -1,6 +1,6 @@
 ﻿namespace SOFT130Project
 {
-    partial class passwordPrompt
+    partial class frmPasswordPrompt
     {
         /// <summary>
         /// Required designer variable.
@@ -71,6 +71,7 @@
             this.txtFirstPasswordCharacter.Name = "txtFirstPasswordCharacter";
             this.txtFirstPasswordCharacter.Size = new System.Drawing.Size(36, 26);
             this.txtFirstPasswordCharacter.TabIndex = 54;
+            this.txtFirstPasswordCharacter.TextChanged += new System.EventHandler(this.firstPasswordValidate);
             // 
             // lblFirstPasswordCharacter
             // 
@@ -89,6 +90,7 @@
             this.txtThirdPasswordCharacter.Name = "txtThirdPasswordCharacter";
             this.txtThirdPasswordCharacter.Size = new System.Drawing.Size(36, 26);
             this.txtThirdPasswordCharacter.TabIndex = 55;
+            this.txtThirdPasswordCharacter.TextChanged += new System.EventHandler(this.thirdPasswordValidate);
             // 
             // txtSecondPasswordCharacter
             // 
@@ -97,6 +99,7 @@
             this.txtSecondPasswordCharacter.Name = "txtSecondPasswordCharacter";
             this.txtSecondPasswordCharacter.Size = new System.Drawing.Size(36, 26);
             this.txtSecondPasswordCharacter.TabIndex = 56;
+            this.txtSecondPasswordCharacter.TextChanged += new System.EventHandler(this.secondPasswordValidate);
             // 
             // lblSecondPasswordCharacter
             // 
@@ -162,7 +165,7 @@
             this.pictureBox1.TabIndex = 123;
             this.pictureBox1.TabStop = false;
             // 
-            // passwordPrompt
+            // frmPasswordPrompt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -179,7 +182,7 @@
             this.Controls.Add(this.lblFirstPasswordCharacter);
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.picHeader);
-            this.Name = "passwordPrompt";
+            this.Name = "frmPasswordPrompt";
             this.Text = "passwordPrompt";
             ((System.ComponentModel.ISupportInitialize)(this.picHeader)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

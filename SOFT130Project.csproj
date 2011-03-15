@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="account.cs" />
     <Compile Include="account_add.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +65,7 @@
     <Compile Include="account_delete.Designer.cs">
       <DependentUpon>account_delete.cs</DependentUpon>
     </Compile>
+    <Compile Include="customer.cs" />
     <Compile Include="account_view.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +84,7 @@
     <Compile Include="customer_delete.Designer.cs">
       <DependentUpon>customer_delete.cs</DependentUpon>
     </Compile>
+    <Compile Include="fileHandling.cs" />
     <Compile Include="main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +97,7 @@
     <Compile Include="passwordPrompt.designer.cs">
       <DependentUpon>passwordPrompt.cs</DependentUpon>
     </Compile>
+    <Compile Include="transaction.cs" />
     <Compile Include="transaction_add.cs">
       <SubType>Form</SubType>
     </Compile>
