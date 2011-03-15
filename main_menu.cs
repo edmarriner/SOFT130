@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -46,6 +47,15 @@ namespace SOFT130Project
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ArrayList returnedData = fileHandling.readFile();
+
+          
+
+            //textBox1.Text = returnedData;
         }
 
     }
