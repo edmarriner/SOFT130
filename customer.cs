@@ -8,7 +8,7 @@ namespace SOFT130Project
 {
     class Customer
     {
-        private int ID;
+        private long ID;
         private string title;
         private string firstName;
         private string initials; //Optional
@@ -25,7 +25,7 @@ namespace SOFT130Project
         private ArrayList accountList;
 
         //constructor
-        public Customer(int this_ID, string this_title, string this_firstName, 
+        public Customer(long this_ID, string this_title, string this_firstName, 
                 string this_initials, string this_surname, string this_dob, 
                 string this_houseNameNumber, string this_streetName, string this_addressArea, 
                 string this_cityTown, string this_county, string this_postcode, 
@@ -59,7 +59,7 @@ namespace SOFT130Project
             return numAccounts;
         }
 
-        public int getID()
+        public long getID()
         {
             return ID;
         }

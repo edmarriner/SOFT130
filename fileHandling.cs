@@ -31,7 +31,9 @@ namespace SOFT130Project
             linesPerType.Add("transaction", 6); loopCount.Add("transaction", 0); numLoops.Add("transaction", 0);
 
             //Load the file then loop until there are no lines left
-            System.IO.StreamReader file = new System.IO.StreamReader("e-Softies.txt");
+
+            //Old file name: e-Softies.txt. New file name: e-SOFT_v1.txt
+            System.IO.StreamReader file = new System.IO.StreamReader("e-SOFT_v1.txt");
             while ((line = file.ReadLine()) != null)
             {
                 //Incriment the line number, remove any whitespace at the start/end of lines
@@ -109,7 +111,7 @@ namespace SOFT130Project
                             {
                                 //All accounts finished. Add to customer.
                          
-                                Customer thisCustomer = new Customer(Convert.ToInt32(tempCustomerData[0]),
+                                Customer thisCustomer = new Customer(Convert.ToInt64(tempCustomerData[0]),
                                         Convert.ToString(tempCustomerData[1]),
                                         Convert.ToString(tempCustomerData[2]),
                                         Convert.ToString(tempCustomerData[3]),
