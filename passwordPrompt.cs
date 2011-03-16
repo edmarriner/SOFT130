@@ -21,7 +21,6 @@ namespace SOFT130Project
         {
             if (txtFirstPasswordCharacter.Text.Length == 1)
             {
-                txtFirstPasswordCharacter.BackColor = Color.LightGreen;
                 txtSecondPasswordCharacter.Focus();
             }
         }
@@ -30,7 +29,6 @@ namespace SOFT130Project
         {
             if (txtSecondPasswordCharacter.Text.Length == 1)
             {
-                txtSecondPasswordCharacter.BackColor = Color.PaleGreen;
                 txtThirdPasswordCharacter.Focus();
             }
         }
@@ -39,7 +37,6 @@ namespace SOFT130Project
         {
             if (txtThirdPasswordCharacter.Text.Length == 1)
             {
-                txtThirdPasswordCharacter.BackColor = Color.LightGreen;
             }
         }
     }
