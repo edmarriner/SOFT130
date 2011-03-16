@@ -18,6 +18,8 @@ namespace SOFT130Project
             InitializeComponent();
         }
 
+        file fileClass = new file();
+
         private void tmrDateTime_Tick(object sender, EventArgs e)
         {
             DateTime CurrTime = DateTime.Now;
@@ -32,14 +34,14 @@ namespace SOFT130Project
 
         private void btnNewCustomer_Click(object sender, EventArgs e)
         {
-            frmCustomerAdd frmCustomerAdd = new frmCustomerAdd();
+            frmCustomerAdd frmCustomerAdd = new frmCustomerAdd(fileClass);
             frmCustomerAdd.Show();
             this.Close();
         }
 
         private void btnExistingCustomer_Click(object sender, EventArgs e)
         {
-            frmCustomerSearch frmCustomerSearch = new frmCustomerSearch();
+            frmCustomerSearch frmCustomerSearch = new frmCustomerSearch(fileClass);
             frmCustomerSearch.Show();
             this.Close();
         }
@@ -52,7 +54,8 @@ namespace SOFT130Project
         private void button1_Click(object sender, EventArgs e)
         {
             textBox1.Text = "";
-            ArrayList returnedData = fileHandling.readFile();
+           
+            ArrayList returnedData = fileClass.readFile();
 
             foreach (Customer oneCustomer in returnedData)
             {

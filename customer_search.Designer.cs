@@ -31,19 +31,21 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblDescription = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cboSearchField = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.cboSearchTerm = new System.Windows.Forms.TextBox();
+            this.txtSearchTerm = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvCustomers = new System.Windows.Forms.DataGridView();
+            this.num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnView = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.lblResult = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,48 +78,24 @@
             this.lblDescription.TabIndex = 48;
             this.lblDescription.Text = "Search Customer";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(26, 115);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(115, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Search Field:";
-            // 
-            // cboSearchField
-            // 
-            this.cboSearchField.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboSearchField.FormattingEnabled = true;
-            this.cboSearchField.Items.AddRange(new object[] {
-            "ID",
-            "Name",
-            "DoB",
-            "Postcode"});
-            this.cboSearchField.Location = new System.Drawing.Point(147, 112);
-            this.cboSearchField.Name = "cboSearchField";
-            this.cboSearchField.Size = new System.Drawing.Size(121, 28);
-            this.cboSearchField.TabIndex = 4;
-            this.cboSearchField.Text = "ID";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(25, 151);
+            this.label5.Location = new System.Drawing.Point(25, 115);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(116, 20);
+            this.label5.Size = new System.Drawing.Size(71, 20);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Search Term:";
+            this.label5.Text = "Search:";
             // 
-            // cboSearchTerm
+            // txtSearchTerm
             // 
-            this.cboSearchTerm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboSearchTerm.Location = new System.Drawing.Point(147, 148);
-            this.cboSearchTerm.Name = "cboSearchTerm";
-            this.cboSearchTerm.Size = new System.Drawing.Size(156, 26);
-            this.cboSearchTerm.TabIndex = 6;
+            this.txtSearchTerm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchTerm.Location = new System.Drawing.Point(102, 112);
+            this.txtSearchTerm.Name = "txtSearchTerm";
+            this.txtSearchTerm.Size = new System.Drawing.Size(156, 26);
+            this.txtSearchTerm.TabIndex = 6;
+            this.txtSearchTerm.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearchTerm_KeyDown);
             // 
             // btnSearch
             // 
@@ -125,7 +103,7 @@
             this.btnSearch.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSearch.Location = new System.Drawing.Point(30, 186);
+            this.btnSearch.Location = new System.Drawing.Point(29, 150);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(111, 33);
             this.btnSearch.TabIndex = 33;
@@ -139,7 +117,7 @@
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCancel.Location = new System.Drawing.Point(147, 187);
+            this.btnCancel.Location = new System.Drawing.Point(147, 150);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(111, 33);
             this.btnCancel.TabIndex = 34;
@@ -147,13 +125,43 @@
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // dataGridView1
+            // dgvCustomers
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(30, 235);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(452, 150);
-            this.dataGridView1.TabIndex = 49;
+            this.dgvCustomers.AllowUserToAddRows = false;
+            this.dgvCustomers.AllowUserToDeleteRows = false;
+            this.dgvCustomers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCellsExceptHeader;
+            this.dgvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCustomers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.num,
+            this.name,
+            this.address});
+            this.dgvCustomers.Location = new System.Drawing.Point(24, 189);
+            this.dgvCustomers.MultiSelect = false;
+            this.dgvCustomers.Name = "dgvCustomers";
+            this.dgvCustomers.RowHeadersVisible = false;
+            this.dgvCustomers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvCustomers.Size = new System.Drawing.Size(452, 160);
+            this.dgvCustomers.TabIndex = 49;
+            // 
+            // num
+            // 
+            this.num.HeaderText = "#";
+            this.num.Name = "num";
+            this.num.Width = 5;
+            // 
+            // name
+            // 
+            this.name.HeaderText = "Name";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            this.name.Width = 5;
+            // 
+            // address
+            // 
+            this.address.HeaderText = "Address";
+            this.address.Name = "address";
+            this.address.ReadOnly = true;
+            this.address.Width = 5;
             // 
             // btnView
             // 
@@ -161,12 +169,13 @@
             this.btnView.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnView.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnView.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnView.Location = new System.Drawing.Point(29, 391);
+            this.btnView.Location = new System.Drawing.Point(24, 355);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(111, 33);
             this.btnView.TabIndex = 50;
             this.btnView.Text = "View";
             this.btnView.UseVisualStyleBackColor = false;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // btnEdit
             // 
@@ -174,7 +183,7 @@
             this.btnEdit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEdit.Location = new System.Drawing.Point(192, 391);
+            this.btnEdit.Location = new System.Drawing.Point(195, 355);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(111, 33);
             this.btnEdit.TabIndex = 51;
@@ -187,12 +196,26 @@
             this.btnDelete.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnDelete.Location = new System.Drawing.Point(371, 391);
+            this.btnDelete.Location = new System.Drawing.Point(365, 355);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(111, 33);
             this.btnDelete.TabIndex = 52;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            // 
+            // lblResult
+            // 
+            this.lblResult.AutoSize = true;
+            this.lblResult.BackColor = System.Drawing.Color.Transparent;
+            this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResult.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblResult.Location = new System.Drawing.Point(376, 168);
+            this.lblResult.MinimumSize = new System.Drawing.Size(100, 0);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(100, 15);
+            this.lblResult.TabIndex = 53;
+            this.lblResult.Text = "Make a Search";
+            this.lblResult.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // frmCustomerSearch
             // 
@@ -200,18 +223,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(501, 452);
+            this.ClientSize = new System.Drawing.Size(501, 396);
+            this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnView);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvCustomers);
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.cboSearchTerm);
+            this.Controls.Add(this.txtSearchTerm);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.cboSearchField);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -222,7 +244,7 @@
             this.Load += new System.EventHandler(this.frmCustomerSearch_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,18 +253,20 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cboSearchField;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox cboSearchTerm;
+        private System.Windows.Forms.TextBox txtSearchTerm;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvCustomers;
         private System.Windows.Forms.Button btnView;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn num;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn address;
+        private System.Windows.Forms.Label lblResult;
     }
 }
 

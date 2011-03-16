@@ -12,12 +12,14 @@ namespace SOFT130Project
 {
     public partial class frmCustomerAdd : Form
     {
-        public frmCustomerAdd()
+        public frmCustomerAdd(file this_fileClass)
         {
             InitializeComponent();
+            fileClass = this_fileClass;
         }
 
         bool showMainMenu = true;
+        file fileClass;
 
         private void btnCancel_Click(object sender, EventArgs e)
         {

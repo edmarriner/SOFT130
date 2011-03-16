@@ -17,7 +17,6 @@ namespace SOFT130Project
             InitializeComponent();
         }
 
-
         private void frmMain_Load(object sender, EventArgs e)
         {
             frmMainMenu frmMainMenu = new frmMainMenu();

@@ -1,6 +1,6 @@
 ﻿namespace SOFT130Project
 {
-    partial class customer_View
+    partial class frmCustomerView
     {
         /// <summary>
         /// Required designer variable.
@@ -55,8 +55,8 @@
             this.lblName = new System.Windows.Forms.Label();
             this.grpAccounts = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bntEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.bntEdit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picHeader)).BeginInit();
             this.grpAddress.SuspendLayout();
@@ -377,18 +377,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(352, 81);
             this.dataGridView1.TabIndex = 0;
             // 
-            // bntEdit
-            // 
-            this.bntEdit.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.bntEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntEdit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bntEdit.Location = new System.Drawing.Point(7, 115);
-            this.bntEdit.Name = "bntEdit";
-            this.bntEdit.Size = new System.Drawing.Size(86, 33);
-            this.bntEdit.TabIndex = 81;
-            this.bntEdit.Text = "Edit";
-            this.bntEdit.UseVisualStyleBackColor = false;
-            // 
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -401,6 +389,18 @@
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
             // 
+            // bntEdit
+            // 
+            this.bntEdit.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.bntEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntEdit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bntEdit.Location = new System.Drawing.Point(7, 115);
+            this.bntEdit.Name = "bntEdit";
+            this.bntEdit.Size = new System.Drawing.Size(86, 33);
+            this.bntEdit.TabIndex = 81;
+            this.bntEdit.Text = "Edit";
+            this.bntEdit.UseVisualStyleBackColor = false;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
@@ -411,7 +411,7 @@
             this.pictureBox1.TabIndex = 122;
             this.pictureBox1.TabStop = false;
             // 
-            // customer_View
+            // frmCustomerView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -424,8 +424,14 @@
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.picHeader);
-            this.Name = "customer_View";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "frmCustomerView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "customerView";
+            this.TopMost = true;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCustomerView_FormClosing);
+            this.Load += new System.EventHandler(this.frmCustomerView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picHeader)).EndInit();
             this.grpAddress.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

@@ -6,9 +6,28 @@ using System.Text;
 
 namespace SOFT130Project
 {
-    public class fileHandling
+    public class file
     {
-        public static ArrayList readFile()
+
+        private int currentCustomerNum = 0;
+        private int currentAccountNum = 0;
+        private ArrayList fileData = new ArrayList();
+
+        public file()
+        {
+            //Do nothing
+        }
+
+        public void setcurrentCustomerNum(int this_currentCustomerNum){
+            currentCustomerNum = this_currentCustomerNum;
+        }
+
+        public int getcurrentCustomerNum()
+        {
+            return currentCustomerNum;
+        }
+
+        public ArrayList readFile()
         {
             //Setup variables
             Dictionary<string, int> linesPerType = new Dictionary<string, int>();
@@ -18,7 +37,8 @@ namespace SOFT130Project
             string currentType = "customer";
             string line;
 
-            ArrayList fileData = new ArrayList();
+            fileData.Clear();
+            
             ArrayList tempCustomerData = new ArrayList();
             ArrayList tempAccountData = new ArrayList();
             ArrayList tempTransactionData = new ArrayList();

@@ -72,11 +72,11 @@
     <Compile Include="account_view.designer.cs">
       <DependentUpon>account_view.cs</DependentUpon>
     </Compile>
-    <Compile Include="customer_View.cs">
+    <Compile Include="customer_view.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="customer_View.designer.cs">
-      <DependentUpon>customer_View.cs</DependentUpon>
+    <Compile Include="customer_view.designer.cs">
+      <DependentUpon>customer_view.cs</DependentUpon>
     </Compile>
     <Compile Include="customer_delete.cs">
       <SubType>Form</SubType>
@@ -84,7 +84,7 @@
     <Compile Include="customer_delete.Designer.cs">
       <DependentUpon>customer_delete.cs</DependentUpon>
     </Compile>
-    <Compile Include="fileHandling.cs" />
+    <Compile Include="file.cs" />
     <Compile Include="main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,8 +133,8 @@
     <EmbeddedResource Include="account_view.resx">
       <DependentUpon>account_view.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="customer_View.resx">
-      <DependentUpon>customer_View.cs</DependentUpon>
+    <EmbeddedResource Include="customer_view.resx">
+      <DependentUpon>customer_view.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="customer_delete.resx">
       <DependentUpon>customer_delete.cs</DependentUpon>
