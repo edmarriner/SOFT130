@@ -25,6 +25,7 @@ namespace SOFT130Project
         {
             
             int currentCustomerNum = fileClass.getcurrentCustomerNum();
+            int currentAccountNum = 0;
             ArrayList returnedData = fileClass.readFile();
 
             Customer thisCustomer = (Customer) returnedData[currentCustomerNum];
@@ -37,6 +38,28 @@ namespace SOFT130Project
             lblCustomerTownOrCity.Text = thisCustomer.getcityTown();
             lblCustomerCounty.Text = thisCustomer.getcounty();
             lblCustomerPostcode.Text = thisCustomer.getpostcode();
+
+            foreach (Account oneAccount in thisCustomer.getaccountList())
+            {
+
+                DataGridViewRow dgvRow = new DataGridViewRow();
+                DataGridViewCell dgvCell = new DataGridViewTextBoxCell();
+
+                dgvCell.Value = currentAccountNum;
+                dgvRow.Cells.Add(dgvCell);
+
+                dgvCell = new DataGridViewTextBoxCell();
+                dgvCell.Value = oneAccount.getnickName();
+                dgvRow.Cells.Add(dgvCell);
+
+                dgvCell = new DataGridViewTextBoxCell();
+                dgvCell.Value = oneAccount.getcurrentBalance();
+                dgvRow.Cells.Add(dgvCell);
+
+                dgvAccounts.Rows.Add(dgvRow);
+                currentAccountNum++;
+            }
+
 
         }
 

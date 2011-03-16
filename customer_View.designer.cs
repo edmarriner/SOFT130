@@ -54,18 +54,21 @@
             this.lblCustomerName = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.grpAccounts = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnDelete = new System.Windows.Forms.Button();
             this.bntEdit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dgvAccounts = new System.Windows.Forms.DataGridView();
+            this.num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.balance = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.picHeader)).BeginInit();
             this.grpAddress.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.grpCustomer.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.grpAccounts.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAccounts)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTime
@@ -95,7 +98,7 @@
             this.btnSelectAccount.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnSelectAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelectAccount.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSelectAccount.Location = new System.Drawing.Point(133, 115);
+            this.btnSelectAccount.Location = new System.Drawing.Point(6, 115);
             this.btnSelectAccount.Name = "btnSelectAccount";
             this.btnSelectAccount.Size = new System.Drawing.Size(86, 33);
             this.btnSelectAccount.TabIndex = 71;
@@ -358,24 +361,16 @@
             // 
             // grpAccounts
             // 
-            this.grpAccounts.Controls.Add(this.dataGridView1);
+            this.grpAccounts.Controls.Add(this.dgvAccounts);
             this.grpAccounts.Controls.Add(this.btnDelete);
             this.grpAccounts.Controls.Add(this.btnSelectAccount);
             this.grpAccounts.Controls.Add(this.bntEdit);
-            this.grpAccounts.Location = new System.Drawing.Point(16, 396);
+            this.grpAccounts.Location = new System.Drawing.Point(16, 369);
             this.grpAccounts.Name = "grpAccounts";
             this.grpAccounts.Size = new System.Drawing.Size(365, 154);
             this.grpAccounts.TabIndex = 80;
             this.grpAccounts.TabStop = false;
             this.grpAccounts.Text = "Accounts";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(352, 81);
-            this.dataGridView1.TabIndex = 0;
             // 
             // btnDelete
             // 
@@ -394,7 +389,7 @@
             this.bntEdit.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.bntEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bntEdit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bntEdit.Location = new System.Drawing.Point(7, 115);
+            this.bntEdit.Location = new System.Drawing.Point(139, 115);
             this.bntEdit.Name = "bntEdit";
             this.bntEdit.Size = new System.Drawing.Size(86, 33);
             this.bntEdit.TabIndex = 81;
@@ -411,11 +406,49 @@
             this.pictureBox1.TabIndex = 122;
             this.pictureBox1.TabStop = false;
             // 
+            // dgvAccounts
+            // 
+            this.dgvAccounts.AllowUserToAddRows = false;
+            this.dgvAccounts.AllowUserToDeleteRows = false;
+            this.dgvAccounts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCellsExceptHeader;
+            this.dgvAccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAccounts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.num,
+            this.name,
+            this.balance});
+            this.dgvAccounts.Location = new System.Drawing.Point(6, 19);
+            this.dgvAccounts.MultiSelect = false;
+            this.dgvAccounts.Name = "dgvAccounts";
+            this.dgvAccounts.RowHeadersVisible = false;
+            this.dgvAccounts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvAccounts.Size = new System.Drawing.Size(352, 90);
+            this.dgvAccounts.TabIndex = 83;
+            // 
+            // num
+            // 
+            this.num.HeaderText = "#";
+            this.num.Name = "num";
+            this.num.Width = 5;
+            // 
+            // name
+            // 
+            this.name.HeaderText = "Name";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            this.name.Width = 5;
+            // 
+            // balance
+            // 
+            this.balance.HeaderText = "Balance";
+            this.balance.Name = "balance";
+            this.balance.ReadOnly = true;
+            this.balance.Width = 5;
+            // 
             // frmCustomerView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(393, 562);
+            this.ClientSize = new System.Drawing.Size(393, 531);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.grpAccounts);
             this.Controls.Add(this.grpCustomer);
@@ -440,8 +473,8 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.grpAccounts.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAccounts)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -470,7 +503,6 @@
         private System.Windows.Forms.Label lblStreet;
         private System.Windows.Forms.Label lblCustomerHouseNameOrNum;
         private System.Windows.Forms.Label lblHouseNameOrNum;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lblPostcode;
         private System.Windows.Forms.Label lblCustomerPostcode;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -479,5 +511,9 @@
         private System.Windows.Forms.Label lblDOB;
         private System.Windows.Forms.Label lblCustomerName;
         private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.DataGridView dgvAccounts;
+        private System.Windows.Forms.DataGridViewTextBoxColumn num;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn balance;
     }
 }
