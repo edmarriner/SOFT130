@@ -1,6 +1,6 @@
-﻿namespace SOFT130Project.Resources
+﻿namespace SOFT130Project
 {
-    partial class account_view
+    partial class frmAccountView
     {
         /// <summary>
         /// Required designer variable.
@@ -36,16 +36,25 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblCustomer = new System.Windows.Forms.Label();
+            this.lblAccountNickName = new System.Windows.Forms.Label();
             this.lblAccountNumber = new System.Windows.Forms.Label();
-            this.lblAccountCaption = new System.Windows.Forms.Label();
-            this.lblAmountInAccount = new System.Windows.Forms.Label();
+            this.lblAccountSortCode = new System.Windows.Forms.Label();
             this.grpTransactions = new System.Windows.Forms.GroupBox();
+            this.dgvTransactions = new System.Windows.Forms.DataGridView();
             this.btnSelectTransaction = new System.Windows.Forms.Button();
-            this.lstTransactions = new System.Windows.Forms.ListBox();
             this.btnEdit = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblAccountBalance = new System.Windows.Forms.Label();
+            this.num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.balance = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.grpTransactions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTransactions)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -127,87 +136,159 @@
             this.lblCustomer.TabIndex = 127;
             this.lblCustomer.Text = "lblCustomer";
             // 
+            // lblAccountNickName
+            // 
+            this.lblAccountNickName.AutoSize = true;
+            this.lblAccountNickName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccountNickName.Location = new System.Drawing.Point(143, 142);
+            this.lblAccountNickName.Name = "lblAccountNickName";
+            this.lblAccountNickName.Size = new System.Drawing.Size(155, 20);
+            this.lblAccountNickName.TabIndex = 128;
+            this.lblAccountNickName.Text = "lblAccountNickName";
+            // 
             // lblAccountNumber
             // 
             this.lblAccountNumber.AutoSize = true;
             this.lblAccountNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccountNumber.Location = new System.Drawing.Point(143, 142);
+            this.lblAccountNumber.Location = new System.Drawing.Point(144, 171);
             this.lblAccountNumber.Name = "lblAccountNumber";
             this.lblAccountNumber.Size = new System.Drawing.Size(139, 20);
-            this.lblAccountNumber.TabIndex = 128;
+            this.lblAccountNumber.TabIndex = 129;
             this.lblAccountNumber.Text = "lblAccountNumber";
             // 
-            // lblAccountCaption
+            // lblAccountSortCode
             // 
-            this.lblAccountCaption.AutoSize = true;
-            this.lblAccountCaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccountCaption.Location = new System.Drawing.Point(144, 171);
-            this.lblAccountCaption.Name = "lblAccountCaption";
-            this.lblAccountCaption.Size = new System.Drawing.Size(138, 20);
-            this.lblAccountCaption.TabIndex = 129;
-            this.lblAccountCaption.Text = "lblAccountCaption";
-            // 
-            // lblAmountInAccount
-            // 
-            this.lblAmountInAccount.AutoSize = true;
-            this.lblAmountInAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmountInAccount.Location = new System.Drawing.Point(144, 200);
-            this.lblAmountInAccount.Name = "lblAmountInAccount";
-            this.lblAmountInAccount.Size = new System.Drawing.Size(153, 20);
-            this.lblAmountInAccount.TabIndex = 130;
-            this.lblAmountInAccount.Text = "lblAmountInAccount";
+            this.lblAccountSortCode.AutoSize = true;
+            this.lblAccountSortCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccountSortCode.Location = new System.Drawing.Point(144, 200);
+            this.lblAccountSortCode.Name = "lblAccountSortCode";
+            this.lblAccountSortCode.Size = new System.Drawing.Size(151, 20);
+            this.lblAccountSortCode.TabIndex = 130;
+            this.lblAccountSortCode.Text = "lblAccountSortCode";
             // 
             // grpTransactions
             // 
+            this.grpTransactions.Controls.Add(this.label4);
+            this.grpTransactions.Controls.Add(this.dgvTransactions);
             this.grpTransactions.Controls.Add(this.btnSelectTransaction);
-            this.grpTransactions.Controls.Add(this.lstTransactions);
             this.grpTransactions.Controls.Add(this.btnEdit);
-            this.grpTransactions.Location = new System.Drawing.Point(27, 240);
+            this.grpTransactions.Location = new System.Drawing.Point(12, 256);
             this.grpTransactions.Name = "grpTransactions";
-            this.grpTransactions.Size = new System.Drawing.Size(402, 174);
+            this.grpTransactions.Size = new System.Drawing.Size(407, 230);
             this.grpTransactions.TabIndex = 131;
             this.grpTransactions.TabStop = false;
             this.grpTransactions.Text = "Transactions";
+            // 
+            // dgvTransactions
+            // 
+            this.dgvTransactions.AllowUserToAddRows = false;
+            this.dgvTransactions.AllowUserToDeleteRows = false;
+            this.dgvTransactions.AllowUserToResizeRows = false;
+            this.dgvTransactions.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvTransactions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTransactions.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.num,
+            this.date,
+            this.type,
+            this.description,
+            this.amount,
+            this.balance});
+            this.dgvTransactions.Location = new System.Drawing.Point(10, 19);
+            this.dgvTransactions.MultiSelect = false;
+            this.dgvTransactions.Name = "dgvTransactions";
+            this.dgvTransactions.ReadOnly = true;
+            this.dgvTransactions.RowHeadersVisible = false;
+            this.dgvTransactions.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvTransactions.Size = new System.Drawing.Size(386, 164);
+            this.dgvTransactions.TabIndex = 134;
             // 
             // btnSelectTransaction
             // 
             this.btnSelectTransaction.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnSelectTransaction.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelectTransaction.Location = new System.Drawing.Point(32, 133);
+            this.btnSelectTransaction.Location = new System.Drawing.Point(45, 189);
             this.btnSelectTransaction.Name = "btnSelectTransaction";
             this.btnSelectTransaction.Size = new System.Drawing.Size(154, 35);
             this.btnSelectTransaction.TabIndex = 132;
             this.btnSelectTransaction.Text = "View transaction";
             this.btnSelectTransaction.UseVisualStyleBackColor = false;
             // 
-            // lstTransactions
-            // 
-            this.lstTransactions.FormattingEnabled = true;
-            this.lstTransactions.Location = new System.Drawing.Point(6, 19);
-            this.lstTransactions.Name = "lstTransactions";
-            this.lstTransactions.Size = new System.Drawing.Size(390, 108);
-            this.lstTransactions.TabIndex = 0;
-            // 
             // btnEdit
             // 
             this.btnEdit.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Location = new System.Drawing.Point(194, 133);
+            this.btnEdit.Location = new System.Drawing.Point(207, 189);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(155, 35);
             this.btnEdit.TabIndex = 133;
             this.btnEdit.Text = "Edit transaction";
             this.btnEdit.UseVisualStyleBackColor = false;
             // 
-            // account_view
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(132, -19);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 20);
+            this.label4.TabIndex = 132;
+            this.label4.Text = "label4";
+            // 
+            // lblAccountBalance
+            // 
+            this.lblAccountBalance.AutoSize = true;
+            this.lblAccountBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccountBalance.Location = new System.Drawing.Point(144, 227);
+            this.lblAccountBalance.Name = "lblAccountBalance";
+            this.lblAccountBalance.Size = new System.Drawing.Size(141, 20);
+            this.lblAccountBalance.TabIndex = 132;
+            this.lblAccountBalance.Text = "lblAccountBalance";
+            // 
+            // num
+            // 
+            this.num.FillWeight = 50F;
+            this.num.HeaderText = "#";
+            this.num.Name = "num";
+            // 
+            // date
+            // 
+            this.date.FillWeight = 150F;
+            this.date.HeaderText = "Date";
+            this.date.Name = "date";
+            this.date.ReadOnly = true;
+            // 
+            // type
+            // 
+            this.type.HeaderText = "Type";
+            this.type.Name = "type";
+            this.type.ReadOnly = true;
+            // 
+            // description
+            // 
+            this.description.FillWeight = 200F;
+            this.description.HeaderText = "Description";
+            this.description.Name = "description";
+            // 
+            // amount
+            // 
+            this.amount.HeaderText = "Amount";
+            this.amount.Name = "amount";
+            // 
+            // balance
+            // 
+            this.balance.HeaderText = "Balance";
+            this.balance.Name = "balance";
+            // 
+            // frmAccountView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(431, 448);
+            this.ClientSize = new System.Drawing.Size(431, 493);
+            this.Controls.Add(this.lblAccountBalance);
             this.Controls.Add(this.grpTransactions);
-            this.Controls.Add(this.lblAmountInAccount);
-            this.Controls.Add(this.lblAccountCaption);
+            this.Controls.Add(this.lblAccountSortCode);
             this.Controls.Add(this.lblAccountNumber);
+            this.Controls.Add(this.lblAccountNickName);
             this.Controls.Add(this.lblCustomer);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -218,12 +299,17 @@
             this.Controls.Add(this.pictureBox2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "account_view";
+            this.Name = "frmAccountView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "account_view";
-            this.Load += new System.EventHandler(this.account_view_Load);
+            this.TopMost = true;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAccountView_FormClosing);
+            this.Load += new System.EventHandler(this.frmAccountView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.grpTransactions.ResumeLayout(false);
+            this.grpTransactions.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTransactions)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,12 +325,20 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblCustomer;
+        private System.Windows.Forms.Label lblAccountNickName;
         private System.Windows.Forms.Label lblAccountNumber;
-        private System.Windows.Forms.Label lblAccountCaption;
-        private System.Windows.Forms.Label lblAmountInAccount;
+        private System.Windows.Forms.Label lblAccountSortCode;
         private System.Windows.Forms.GroupBox grpTransactions;
-        private System.Windows.Forms.ListBox lstTransactions;
         private System.Windows.Forms.Button btnSelectTransaction;
         private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.DataGridView dgvTransactions;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblAccountBalance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn num;
+        private System.Windows.Forms.DataGridViewTextBoxColumn date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn amount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn balance;
     }
 }

@@ -109,6 +109,8 @@ namespace SOFT130Project
                 currentCustomerNum++;
             }
 
+            dgvCustomers.Refresh();
+
             if (resultsShown == 0)
             {
                 lblResult.Text = "No results";
@@ -126,14 +128,7 @@ namespace SOFT130Project
 
         private void btnView_Click(object sender, EventArgs e)
         {
-            showMainMenu = false;
-            int selectedCustomer = Convert.ToInt32(dgvCustomers.SelectedRows[0].Cells[0].Value);
-
-            fileClass.setcurrentCustomerNum(selectedCustomer);
-
-            frmCustomerView frmCustomerView = new frmCustomerView(fileClass);
-            frmCustomerView.Show();
-            this.Close();
+            viewCustomer();
         }
 
         private void txtSearchTerm_KeyDown(object sender, KeyEventArgs e)
@@ -145,6 +140,23 @@ namespace SOFT130Project
                 searchForCustomer();
                       
             }
+        }
+
+        private void dgvCustomers_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            viewCustomer();
+        }
+
+        private void viewCustomer()
+        {
+            showMainMenu = false;
+            int selectedCustomer = Convert.ToInt32(dgvCustomers.SelectedRows[0].Cells[0].Value);
+
+            fileClass.setcurrentCustomerNum(selectedCustomer);
+
+            frmCustomerView frmCustomerView = new frmCustomerView(fileClass);
+            frmCustomerView.Show();
+            this.Close();
         }
 
     }

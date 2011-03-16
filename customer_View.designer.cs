@@ -104,6 +104,7 @@
             this.btnSelectAccount.TabIndex = 71;
             this.btnSelectAccount.Text = "View";
             this.btnSelectAccount.UseVisualStyleBackColor = false;
+            this.btnSelectAccount.Click += new System.EventHandler(this.btnSelectAccount_Click);
             // 
             // lblDescription
             // 
@@ -410,7 +411,8 @@
             // 
             this.dgvAccounts.AllowUserToAddRows = false;
             this.dgvAccounts.AllowUserToDeleteRows = false;
-            this.dgvAccounts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCellsExceptHeader;
+            this.dgvAccounts.AllowUserToResizeRows = false;
+            this.dgvAccounts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvAccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAccounts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.num,
@@ -419,30 +421,32 @@
             this.dgvAccounts.Location = new System.Drawing.Point(6, 19);
             this.dgvAccounts.MultiSelect = false;
             this.dgvAccounts.Name = "dgvAccounts";
+            this.dgvAccounts.ReadOnly = true;
             this.dgvAccounts.RowHeadersVisible = false;
             this.dgvAccounts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvAccounts.Size = new System.Drawing.Size(352, 90);
             this.dgvAccounts.TabIndex = 83;
+            this.dgvAccounts.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAccounts_CellContentClick);
             // 
             // num
             // 
+            this.num.FillWeight = 50F;
             this.num.HeaderText = "#";
             this.num.Name = "num";
-            this.num.Width = 5;
             // 
             // name
             // 
+            this.name.FillWeight = 300F;
             this.name.HeaderText = "Name";
             this.name.Name = "name";
             this.name.ReadOnly = true;
-            this.name.Width = 5;
             // 
             // balance
             // 
+            this.balance.FillWeight = 200F;
             this.balance.HeaderText = "Balance";
             this.balance.Name = "balance";
             this.balance.ReadOnly = true;
-            this.balance.Width = 5;
             // 
             // frmCustomerView
             // 

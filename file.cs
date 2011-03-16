@@ -22,9 +22,19 @@ namespace SOFT130Project
             currentCustomerNum = this_currentCustomerNum;
         }
 
+        public void setcurrentAccountNum(int this_currentAccountNum)
+        {
+            currentAccountNum = this_currentAccountNum;
+        }
+
         public int getcurrentCustomerNum()
         {
             return currentCustomerNum;
+        }
+
+        public int getcurrentAccountNum()
+        {
+            return currentAccountNum;
         }
 
         public ArrayList readFile()

@@ -60,6 +60,8 @@ namespace SOFT130Project
                 currentAccountNum++;
             }
 
+            dgvAccounts.Refresh();
+
 
         }
 
@@ -70,6 +72,28 @@ namespace SOFT130Project
                 frmMainMenu frmMainMenu = new frmMainMenu();
                 frmMainMenu.Show();
             }
+        }
+
+        private void btnSelectAccount_Click(object sender, EventArgs e)
+        {
+            viewAccount();
+        }
+
+        private void dgvAccounts_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            viewAccount();
+        }
+
+        private void viewAccount()
+        {
+            showMainMenu = false;
+            int selectedAccount = Convert.ToInt32(dgvAccounts.SelectedRows[0].Cells[0].Value);
+
+            fileClass.setcurrentAccountNum(selectedAccount);
+
+            frmAccountView frmAccountView = new frmAccountView(fileClass);
+            frmAccountView.Show();
+            this.Close();
         }
 
        
