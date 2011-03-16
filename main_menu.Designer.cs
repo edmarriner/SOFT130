@@ -71,7 +71,7 @@
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.BackColor = System.Drawing.Color.SkyBlue;
+            this.lblDate.BackColor = System.Drawing.Color.Transparent;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblDate.Location = new System.Drawing.Point(12, 101);
@@ -83,7 +83,7 @@
             // lblTime
             // 
             this.lblTime.AutoSize = true;
-            this.lblTime.BackColor = System.Drawing.Color.SkyBlue;
+            this.lblTime.BackColor = System.Drawing.Color.Transparent;
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblTime.Location = new System.Drawing.Point(345, 101);

@@ -48,24 +48,24 @@
             this.lblCustomerHouseNameOrNum = new System.Windows.Forms.Label();
             this.lblHouseNameOrNum = new System.Windows.Forms.Label();
             this.grpCustomer = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblCustomerDOB = new System.Windows.Forms.Label();
+            this.lblDOB = new System.Windows.Forms.Label();
+            this.lblCustomerName = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.grpAccounts = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bntEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lblCustomerName = new System.Windows.Forms.Label();
-            this.lblDOB = new System.Windows.Forms.Label();
-            this.lblCustomerDOB = new System.Windows.Forms.Label();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.picHeader)).BeginInit();
             this.grpAddress.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.grpCustomer.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.grpAccounts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTime
@@ -95,11 +95,11 @@
             this.btnSelectAccount.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnSelectAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelectAccount.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSelectAccount.Location = new System.Drawing.Point(219, 369);
+            this.btnSelectAccount.Location = new System.Drawing.Point(133, 115);
             this.btnSelectAccount.Name = "btnSelectAccount";
-            this.btnSelectAccount.Size = new System.Drawing.Size(162, 33);
+            this.btnSelectAccount.Size = new System.Drawing.Size(86, 33);
             this.btnSelectAccount.TabIndex = 71;
-            this.btnSelectAccount.Text = "Select Account";
+            this.btnSelectAccount.Text = "View";
             this.btnSelectAccount.UseVisualStyleBackColor = false;
             // 
             // lblDescription
@@ -297,100 +297,6 @@
             this.grpCustomer.TabStop = false;
             this.grpCustomer.Text = "Customer";
             // 
-            // grpAccounts
-            // 
-            this.grpAccounts.Controls.Add(this.dataGridView1);
-            this.grpAccounts.Location = new System.Drawing.Point(16, 408);
-            this.grpAccounts.Name = "grpAccounts";
-            this.grpAccounts.Size = new System.Drawing.Size(365, 106);
-            this.grpAccounts.TabIndex = 80;
-            this.grpAccounts.TabStop = false;
-            this.grpAccounts.Text = "Accounts";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(352, 81);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // bntEdit
-            // 
-            this.bntEdit.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.bntEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntEdit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bntEdit.Location = new System.Drawing.Point(203, 520);
-            this.bntEdit.Name = "bntEdit";
-            this.bntEdit.Size = new System.Drawing.Size(86, 33);
-            this.bntEdit.TabIndex = 81;
-            this.bntEdit.Text = "Edit";
-            this.bntEdit.UseVisualStyleBackColor = false;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnDelete.Location = new System.Drawing.Point(295, 520);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(86, 33);
-            this.btnDelete.TabIndex = 82;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
-            this.pictureBox1.BackgroundImage = global::SOFT130Project.Properties.Resources.hmbc;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(244, 45);
-            this.pictureBox1.TabIndex = 122;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lblName
-            // 
-            this.lblName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(105, 0);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(55, 20);
-            this.lblName.TabIndex = 77;
-            this.lblName.Text = "Name:";
-            // 
-            // lblCustomerName
-            // 
-            this.lblCustomerName.AutoSize = true;
-            this.lblCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerName.Location = new System.Drawing.Point(166, 0);
-            this.lblCustomerName.Name = "lblCustomerName";
-            this.lblCustomerName.Size = new System.Drawing.Size(74, 20);
-            this.lblCustomerName.TabIndex = 74;
-            this.lblCustomerName.Text = "Jake Hall";
-            // 
-            // lblDOB
-            // 
-            this.lblDOB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDOB.AutoSize = true;
-            this.lblDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDOB.Location = new System.Drawing.Point(112, 23);
-            this.lblDOB.Name = "lblDOB";
-            this.lblDOB.Size = new System.Drawing.Size(48, 20);
-            this.lblDOB.TabIndex = 76;
-            this.lblDOB.Text = "DOB:";
-            // 
-            // lblCustomerDOB
-            // 
-            this.lblCustomerDOB.AutoSize = true;
-            this.lblCustomerDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerDOB.Location = new System.Drawing.Point(166, 23);
-            this.lblCustomerDOB.Name = "lblCustomerDOB";
-            this.lblCustomerDOB.Size = new System.Drawing.Size(89, 20);
-            this.lblCustomerDOB.TabIndex = 75;
-            this.lblCustomerDOB.Text = "15/07/1991";
-            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
@@ -408,20 +314,114 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(352, 47);
             this.tableLayoutPanel2.TabIndex = 78;
             // 
+            // lblCustomerDOB
+            // 
+            this.lblCustomerDOB.AutoSize = true;
+            this.lblCustomerDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerDOB.Location = new System.Drawing.Point(166, 23);
+            this.lblCustomerDOB.Name = "lblCustomerDOB";
+            this.lblCustomerDOB.Size = new System.Drawing.Size(89, 20);
+            this.lblCustomerDOB.TabIndex = 75;
+            this.lblCustomerDOB.Text = "15/07/1991";
+            // 
+            // lblDOB
+            // 
+            this.lblDOB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDOB.AutoSize = true;
+            this.lblDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDOB.Location = new System.Drawing.Point(112, 23);
+            this.lblDOB.Name = "lblDOB";
+            this.lblDOB.Size = new System.Drawing.Size(48, 20);
+            this.lblDOB.TabIndex = 76;
+            this.lblDOB.Text = "DOB:";
+            // 
+            // lblCustomerName
+            // 
+            this.lblCustomerName.AutoSize = true;
+            this.lblCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerName.Location = new System.Drawing.Point(166, 0);
+            this.lblCustomerName.Name = "lblCustomerName";
+            this.lblCustomerName.Size = new System.Drawing.Size(74, 20);
+            this.lblCustomerName.TabIndex = 74;
+            this.lblCustomerName.Text = "Jake Hall";
+            // 
+            // lblName
+            // 
+            this.lblName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(105, 0);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(55, 20);
+            this.lblName.TabIndex = 77;
+            this.lblName.Text = "Name:";
+            // 
+            // grpAccounts
+            // 
+            this.grpAccounts.Controls.Add(this.dataGridView1);
+            this.grpAccounts.Controls.Add(this.btnDelete);
+            this.grpAccounts.Controls.Add(this.btnSelectAccount);
+            this.grpAccounts.Controls.Add(this.bntEdit);
+            this.grpAccounts.Location = new System.Drawing.Point(16, 396);
+            this.grpAccounts.Name = "grpAccounts";
+            this.grpAccounts.Size = new System.Drawing.Size(365, 154);
+            this.grpAccounts.TabIndex = 80;
+            this.grpAccounts.TabStop = false;
+            this.grpAccounts.Text = "Accounts";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(352, 81);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // bntEdit
+            // 
+            this.bntEdit.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.bntEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntEdit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bntEdit.Location = new System.Drawing.Point(7, 115);
+            this.bntEdit.Name = "bntEdit";
+            this.bntEdit.Size = new System.Drawing.Size(86, 33);
+            this.bntEdit.TabIndex = 81;
+            this.bntEdit.Text = "Edit";
+            this.bntEdit.UseVisualStyleBackColor = false;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnDelete.Location = new System.Drawing.Point(272, 115);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(86, 33);
+            this.btnDelete.TabIndex = 82;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
+            this.pictureBox1.BackgroundImage = global::SOFT130Project.Properties.Resources.hmbc;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(244, 45);
+            this.pictureBox1.TabIndex = 122;
+            this.pictureBox1.TabStop = false;
+            // 
             // customer_View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(393, 562);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.bntEdit);
             this.Controls.Add(this.grpAccounts);
             this.Controls.Add(this.grpCustomer);
             this.Controls.Add(this.grpAddress);
             this.Controls.Add(this.lblTime);
             this.Controls.Add(this.lblDate);
-            this.Controls.Add(this.btnSelectAccount);
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.picHeader);
             this.Name = "customer_View";
@@ -431,11 +431,11 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.grpCustomer.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.grpAccounts.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

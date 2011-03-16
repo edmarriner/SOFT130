@@ -29,16 +29,21 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblDescription = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblDescription = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cboSearchField = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cboSearchTerm = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnView = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -47,29 +52,29 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(-2, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(326, 69);
+            this.panel1.Size = new System.Drawing.Size(506, 69);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
+            this.pictureBox1.BackgroundImage = global::SOFT130Project.Properties.Resources.hmbc;
+            this.pictureBox1.Location = new System.Drawing.Point(128, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(244, 45);
+            this.pictureBox1.TabIndex = 121;
+            this.pictureBox1.TabStop = false;
             // 
             // lblDescription
             // 
             this.lblDescription.AutoSize = true;
             this.lblDescription.BackColor = System.Drawing.SystemColors.Control;
             this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescription.Location = new System.Drawing.Point(87, 78);
+            this.lblDescription.Location = new System.Drawing.Point(188, 80);
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(148, 20);
             this.lblDescription.TabIndex = 48;
             this.lblDescription.Text = "Search Customer";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
-            this.pictureBox1.BackgroundImage = global::SOFT130Project.Properties.Resources.hmbc;
-            this.pictureBox1.Location = new System.Drawing.Point(41, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(244, 45);
-            this.pictureBox1.TabIndex = 121;
-            this.pictureBox1.TabStop = false;
             // 
             // label4
             // 
@@ -142,13 +147,64 @@
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(30, 235);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(452, 150);
+            this.dataGridView1.TabIndex = 49;
+            // 
+            // btnView
+            // 
+            this.btnView.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnView.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnView.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnView.Location = new System.Drawing.Point(29, 391);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(111, 33);
+            this.btnView.TabIndex = 50;
+            this.btnView.Text = "View";
+            this.btnView.UseVisualStyleBackColor = false;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnEdit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnEdit.Location = new System.Drawing.Point(192, 391);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(111, 33);
+            this.btnEdit.TabIndex = 51;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = false;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnDelete.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnDelete.Location = new System.Drawing.Point(371, 391);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(111, 33);
+            this.btnDelete.TabIndex = 52;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            // 
             // frmCustomerSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(315, 234);
+            this.ClientSize = new System.Drawing.Size(501, 452);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnView);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSearch);
@@ -166,6 +222,7 @@
             this.Load += new System.EventHandler(this.frmCustomerSearch_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,6 +239,10 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnView;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
 

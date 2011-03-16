@@ -40,8 +40,8 @@
             this.lblAccountCaption = new System.Windows.Forms.Label();
             this.lblAmountInAccount = new System.Windows.Forms.Label();
             this.grpTransactions = new System.Windows.Forms.GroupBox();
-            this.lstTransactions = new System.Windows.Forms.ListBox();
             this.btnSelectTransaction = new System.Windows.Forms.Button();
+            this.lstTransactions = new System.Windows.Forms.ListBox();
             this.btnEdit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -169,14 +169,6 @@
             this.grpTransactions.TabStop = false;
             this.grpTransactions.Text = "Transactions";
             // 
-            // lstTransactions
-            // 
-            this.lstTransactions.FormattingEnabled = true;
-            this.lstTransactions.Location = new System.Drawing.Point(6, 19);
-            this.lstTransactions.Name = "lstTransactions";
-            this.lstTransactions.Size = new System.Drawing.Size(390, 108);
-            this.lstTransactions.TabIndex = 0;
-            // 
             // btnSelectTransaction
             // 
             this.btnSelectTransaction.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -185,8 +177,16 @@
             this.btnSelectTransaction.Name = "btnSelectTransaction";
             this.btnSelectTransaction.Size = new System.Drawing.Size(154, 35);
             this.btnSelectTransaction.TabIndex = 132;
-            this.btnSelectTransaction.Text = "Select transaction";
+            this.btnSelectTransaction.Text = "View transaction";
             this.btnSelectTransaction.UseVisualStyleBackColor = false;
+            // 
+            // lstTransactions
+            // 
+            this.lstTransactions.FormattingEnabled = true;
+            this.lstTransactions.Location = new System.Drawing.Point(6, 19);
+            this.lstTransactions.Name = "lstTransactions";
+            this.lstTransactions.Size = new System.Drawing.Size(390, 108);
+            this.lstTransactions.TabIndex = 0;
             // 
             // btnEdit
             // 
