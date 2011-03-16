@@ -79,10 +79,7 @@ namespace SOFT130Project
             viewAccount();
         }
 
-        private void dgvAccounts_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            viewAccount();
-        }
+  
 
         private void viewAccount()
         {
@@ -94,6 +91,11 @@ namespace SOFT130Project
             frmAccountView frmAccountView = new frmAccountView(fileClass);
             frmAccountView.Show();
             this.Close();
+        }
+
+        private void dgvAccounts_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            viewAccount();
         }
 
        

@@ -154,8 +154,8 @@ namespace SOFT130Project
 
             fileClass.setcurrentCustomerNum(selectedCustomer);
 
-            frmCustomerView frmCustomerView = new frmCustomerView(fileClass);
-            frmCustomerView.Show();
+            frmPasswordPrompt frmPasswordPrompt = new frmPasswordPrompt(fileClass);
+            frmPasswordPrompt.Show();
             this.Close();
         }
 
