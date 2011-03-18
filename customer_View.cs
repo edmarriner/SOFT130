@@ -92,14 +92,23 @@ namespace SOFT130Project
             frmAccountView.Show();
             this.Close();
         }
-
+        private void EditCustomer()
+        {
+            showMainMenu = false;
+           
+           
+            frmCustomerEdit frmCustomerEdit = new frmCustomerEdit(fileClass);
+            frmCustomerEdit.Show();
+            this.Close();
+        }
         private void dgvAccounts_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             viewAccount();
         }
 
-       
-
-
+        private void bntEdit_Click(object sender, EventArgs e)
+        {
+            EditCustomer();
+        }
     }
 }

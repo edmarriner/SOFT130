@@ -54,21 +54,21 @@
             this.lblCustomerName = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.grpAccounts = new System.Windows.Forms.GroupBox();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.bntEdit = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dgvAccounts = new System.Windows.Forms.DataGridView();
             this.num = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.balance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.bntEdit = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picHeader)).BeginInit();
             this.grpAddress.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.grpCustomer.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.grpAccounts.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAccounts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTime
@@ -373,40 +373,6 @@
             this.grpAccounts.TabStop = false;
             this.grpAccounts.Text = "Accounts";
             // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnDelete.Location = new System.Drawing.Point(272, 115);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(86, 33);
-            this.btnDelete.TabIndex = 82;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = false;
-            // 
-            // bntEdit
-            // 
-            this.bntEdit.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.bntEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntEdit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bntEdit.Location = new System.Drawing.Point(139, 115);
-            this.bntEdit.Name = "bntEdit";
-            this.bntEdit.Size = new System.Drawing.Size(86, 33);
-            this.bntEdit.TabIndex = 81;
-            this.bntEdit.Text = "Edit";
-            this.bntEdit.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
-            this.pictureBox1.BackgroundImage = global::SOFT130Project.Properties.Resources.hmbc;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(244, 45);
-            this.pictureBox1.TabIndex = 122;
-            this.pictureBox1.TabStop = false;
-            // 
             // dgvAccounts
             // 
             this.dgvAccounts.AllowUserToAddRows = false;
@@ -433,6 +399,7 @@
             this.num.FillWeight = 50F;
             this.num.HeaderText = "#";
             this.num.Name = "num";
+            this.num.ReadOnly = true;
             // 
             // name
             // 
@@ -447,6 +414,41 @@
             this.balance.HeaderText = "Balance";
             this.balance.Name = "balance";
             this.balance.ReadOnly = true;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnDelete.Location = new System.Drawing.Point(272, 115);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(86, 33);
+            this.btnDelete.TabIndex = 82;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            // 
+            // bntEdit
+            // 
+            this.bntEdit.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.bntEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntEdit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bntEdit.Location = new System.Drawing.Point(139, 115);
+            this.bntEdit.Name = "bntEdit";
+            this.bntEdit.Size = new System.Drawing.Size(86, 33);
+            this.bntEdit.TabIndex = 81;
+            this.bntEdit.Text = "Edit";
+            this.bntEdit.UseVisualStyleBackColor = false;
+            this.bntEdit.Click += new System.EventHandler(this.bntEdit_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.SkyBlue;
+            this.pictureBox1.BackgroundImage = global::SOFT130Project.Properties.Resources.hmbc;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(244, 45);
+            this.pictureBox1.TabIndex = 122;
+            this.pictureBox1.TabStop = false;
             // 
             // frmCustomerView
             // 
@@ -477,8 +479,8 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.grpAccounts.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAccounts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

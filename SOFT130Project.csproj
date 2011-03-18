@@ -72,6 +72,12 @@
     <Compile Include="account_view.designer.cs">
       <DependentUpon>account_view.cs</DependentUpon>
     </Compile>
+    <Compile Include="customer_edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer_edit.Designer.cs">
+      <DependentUpon>customer_edit.cs</DependentUpon>
+    </Compile>
     <Compile Include="customer_view.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="account_view.resx">
       <DependentUpon>account_view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer_edit.resx">
+      <DependentUpon>customer_edit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="customer_view.resx">
       <DependentUpon>customer_view.cs</DependentUpon>
