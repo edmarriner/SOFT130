@@ -38,8 +38,7 @@ namespace SOFT130Project
 
         private void frmCustomerSearch_Load(object sender, EventArgs e)
         {
-
-            
+                        
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -157,6 +156,12 @@ namespace SOFT130Project
             frmPasswordPrompt frmPasswordPrompt = new frmPasswordPrompt(fileClass);
             frmPasswordPrompt.Show();
             this.Close();
+        }
+
+        private void ViewAll_Click(object sender, EventArgs e)
+        {
+            txtSearchTerm.Text = "";
+            searchForCustomer();
         }
 
     }

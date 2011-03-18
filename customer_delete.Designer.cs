@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblDescription = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnAddCustomer = new System.Windows.Forms.Button();
@@ -61,6 +62,7 @@
             this.lblTime = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.picLogo = new System.Windows.Forms.PictureBox();
+            this.tmrDateTime = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -398,7 +400,7 @@
             this.lblTime.AutoSize = true;
             this.lblTime.BackColor = System.Drawing.Color.SkyBlue;
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(419, 36);
+            this.lblTime.Location = new System.Drawing.Point(359, 36);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(43, 20);
             this.lblTime.TabIndex = 62;
@@ -409,7 +411,7 @@
             this.lblDate.AutoSize = true;
             this.lblDate.BackColor = System.Drawing.Color.SkyBlue;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(419, 9);
+            this.lblDate.Location = new System.Drawing.Point(359, 9);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(44, 20);
             this.lblDate.TabIndex = 63;
@@ -424,6 +426,10 @@
             this.picLogo.Size = new System.Drawing.Size(244, 45);
             this.picLogo.TabIndex = 64;
             this.picLogo.TabStop = false;
+            // 
+            // tmrDateTime
+            // 
+            this.tmrDateTime.Tick += new System.EventHandler(this.tmrDateTime_Tick);
             // 
             // customer_delete
             // 
@@ -443,6 +449,7 @@
             this.Name = "customer_delete";
             this.Text = "customer_delete";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.customer_delete_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -489,5 +496,6 @@
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.PictureBox picLogo;
+        private System.Windows.Forms.Timer tmrDateTime;
     }
 }

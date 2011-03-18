@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblTime = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.btnSelectAccount = new System.Windows.Forms.Button();
@@ -61,6 +62,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.bntEdit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tmrDateTime = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picHeader)).BeginInit();
             this.grpAddress.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -76,7 +78,7 @@
             this.lblTime.AutoSize = true;
             this.lblTime.BackColor = System.Drawing.Color.SkyBlue;
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(338, 32);
+            this.lblTime.Location = new System.Drawing.Point(295, 32);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(43, 20);
             this.lblTime.TabIndex = 73;
@@ -87,7 +89,7 @@
             this.lblDate.AutoSize = true;
             this.lblDate.BackColor = System.Drawing.Color.SkyBlue;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(337, 7);
+            this.lblDate.Location = new System.Drawing.Point(294, 7);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(44, 20);
             this.lblDate.TabIndex = 72;
@@ -450,6 +452,10 @@
             this.pictureBox1.TabIndex = 122;
             this.pictureBox1.TabStop = false;
             // 
+            // tmrDateTime
+            // 
+            this.tmrDateTime.Tick += new System.EventHandler(this.tmrDateTime_Tick);
+            // 
             // frmCustomerView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -521,5 +527,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn num;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn balance;
+        private System.Windows.Forms.Timer tmrDateTime;
     }
 }

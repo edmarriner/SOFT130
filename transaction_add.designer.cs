@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,6 +44,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
+            this.tmrDateTime = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboFirstName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboAmount)).BeginInit();
@@ -189,22 +191,28 @@
             this.lblDate.AutoSize = true;
             this.lblDate.BackColor = System.Drawing.Color.SkyBlue;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(359, 9);
+            this.lblDate.Location = new System.Drawing.Point(321, 9);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(44, 20);
             this.lblDate.TabIndex = 122;
             this.lblDate.Text = "Date";
+            this.lblDate.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblTime
             // 
             this.lblTime.AutoSize = true;
             this.lblTime.BackColor = System.Drawing.Color.SkyBlue;
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(360, 31);
+            this.lblTime.Location = new System.Drawing.Point(322, 31);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(43, 20);
             this.lblTime.TabIndex = 123;
             this.lblTime.Text = "Time";
+            this.lblTime.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // tmrDateTime
+            // 
+            this.tmrDateTime.Tick += new System.EventHandler(this.tmrDateTime_Tick);
             // 
             // frmTransactionAdd
             // 
@@ -235,6 +243,7 @@
             this.Text = "Add a Transaction - HMBC Inc.";
             this.TopMost = true;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmTransactionAdd_FormClosing);
+            this.Load += new System.EventHandler(this.frmTransactionAdd_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboFirstName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboAmount)).EndInit();
@@ -261,5 +270,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblTime;
+        private System.Windows.Forms.Timer tmrDateTime;
     }
 }

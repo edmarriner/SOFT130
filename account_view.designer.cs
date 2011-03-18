@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblDate = new System.Windows.Forms.Label();
@@ -40,17 +41,18 @@
             this.lblAccountNumber = new System.Windows.Forms.Label();
             this.lblAccountSortCode = new System.Windows.Forms.Label();
             this.grpTransactions = new System.Windows.Forms.GroupBox();
-            this.dgvTransactions = new System.Windows.Forms.DataGridView();
-            this.btnSelectTransaction = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.lblAccountBalance = new System.Windows.Forms.Label();
+            this.dgvTransactions = new System.Windows.Forms.DataGridView();
             this.num = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.balance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSelectTransaction = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.lblAccountBalance = new System.Windows.Forms.Label();
+            this.tmrDateTime = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.grpTransactions.SuspendLayout();
@@ -179,6 +181,16 @@
             this.grpTransactions.TabStop = false;
             this.grpTransactions.Text = "Transactions";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(132, -19);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 20);
+            this.label4.TabIndex = 132;
+            this.label4.Text = "label4";
+            // 
             // dgvTransactions
             // 
             this.dgvTransactions.AllowUserToAddRows = false;
@@ -202,6 +214,45 @@
             this.dgvTransactions.Size = new System.Drawing.Size(386, 164);
             this.dgvTransactions.TabIndex = 134;
             // 
+            // num
+            // 
+            this.num.FillWeight = 50F;
+            this.num.HeaderText = "#";
+            this.num.Name = "num";
+            this.num.ReadOnly = true;
+            // 
+            // date
+            // 
+            this.date.FillWeight = 150F;
+            this.date.HeaderText = "Date";
+            this.date.Name = "date";
+            this.date.ReadOnly = true;
+            // 
+            // type
+            // 
+            this.type.HeaderText = "Type";
+            this.type.Name = "type";
+            this.type.ReadOnly = true;
+            // 
+            // description
+            // 
+            this.description.FillWeight = 200F;
+            this.description.HeaderText = "Description";
+            this.description.Name = "description";
+            this.description.ReadOnly = true;
+            // 
+            // amount
+            // 
+            this.amount.HeaderText = "Amount";
+            this.amount.Name = "amount";
+            this.amount.ReadOnly = true;
+            // 
+            // balance
+            // 
+            this.balance.HeaderText = "Balance";
+            this.balance.Name = "balance";
+            this.balance.ReadOnly = true;
+            // 
             // btnSelectTransaction
             // 
             this.btnSelectTransaction.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -224,16 +275,6 @@
             this.btnEdit.Text = "Edit transaction";
             this.btnEdit.UseVisualStyleBackColor = false;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(132, -19);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 20);
-            this.label4.TabIndex = 132;
-            this.label4.Text = "label4";
-            // 
             // lblAccountBalance
             // 
             this.lblAccountBalance.AutoSize = true;
@@ -244,40 +285,9 @@
             this.lblAccountBalance.TabIndex = 132;
             this.lblAccountBalance.Text = "lblAccountBalance";
             // 
-            // num
+            // tmrDateTime
             // 
-            this.num.FillWeight = 50F;
-            this.num.HeaderText = "#";
-            this.num.Name = "num";
-            // 
-            // date
-            // 
-            this.date.FillWeight = 150F;
-            this.date.HeaderText = "Date";
-            this.date.Name = "date";
-            this.date.ReadOnly = true;
-            // 
-            // type
-            // 
-            this.type.HeaderText = "Type";
-            this.type.Name = "type";
-            this.type.ReadOnly = true;
-            // 
-            // description
-            // 
-            this.description.FillWeight = 200F;
-            this.description.HeaderText = "Description";
-            this.description.Name = "description";
-            // 
-            // amount
-            // 
-            this.amount.HeaderText = "Amount";
-            this.amount.Name = "amount";
-            // 
-            // balance
-            // 
-            this.balance.HeaderText = "Balance";
-            this.balance.Name = "balance";
+            this.tmrDateTime.Tick += new System.EventHandler(this.tmrDateTime_Tick);
             // 
             // frmAccountView
             // 
@@ -340,5 +350,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn description;
         private System.Windows.Forms.DataGridViewTextBoxColumn amount;
         private System.Windows.Forms.DataGridViewTextBoxColumn balance;
+        private System.Windows.Forms.Timer tmrDateTime;
     }
 }

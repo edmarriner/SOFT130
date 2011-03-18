@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtPostcode = new System.Windows.Forms.TextBox();
             this.txtStreetName = new System.Windows.Forms.TextBox();
@@ -61,6 +62,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnEditCustomer = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.tmrDateTime = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -318,7 +320,7 @@
             this.lblDate.AutoSize = true;
             this.lblDate.BackColor = System.Drawing.Color.SkyBlue;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(363, 8);
+            this.lblDate.Location = new System.Drawing.Point(314, 8);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(44, 20);
             this.lblDate.TabIndex = 68;
@@ -329,7 +331,7 @@
             this.lblTime.AutoSize = true;
             this.lblTime.BackColor = System.Drawing.Color.SkyBlue;
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(363, 35);
+            this.lblTime.Location = new System.Drawing.Point(314, 35);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(43, 20);
             this.lblTime.TabIndex = 67;
@@ -388,6 +390,10 @@
             this.btnCancel.TabIndex = 71;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
+            // 
+            // tmrDateTime
+            // 
+            this.tmrDateTime.Tick += new System.EventHandler(this.tmrDateTime_Tick);
             // 
             // frmCustomerEdit
             // 
@@ -453,5 +459,6 @@
         private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.Button btnEditCustomer;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Timer tmrDateTime;
     }
 }

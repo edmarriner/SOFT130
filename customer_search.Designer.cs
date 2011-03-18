@@ -36,13 +36,14 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.dgvCustomers = new System.Windows.Forms.DataGridView();
+            this.num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnView = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.lblResult = new System.Windows.Forms.Label();
-            this.num = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnViewAll = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).BeginInit();
@@ -146,6 +147,27 @@
             this.dgvCustomers.TabIndex = 49;
             this.dgvCustomers.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvCustomers_CellMouseDoubleClick);
             // 
+            // num
+            // 
+            this.num.FillWeight = 50F;
+            this.num.HeaderText = "#";
+            this.num.Name = "num";
+            this.num.ReadOnly = true;
+            // 
+            // name
+            // 
+            this.name.FillWeight = 300F;
+            this.name.HeaderText = "Name";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            // 
+            // address
+            // 
+            this.address.FillWeight = 400F;
+            this.address.HeaderText = "Address";
+            this.address.Name = "address";
+            this.address.ReadOnly = true;
+            // 
             // btnView
             // 
             this.btnView.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -200,25 +222,19 @@
             this.lblResult.Text = "Make a Search";
             this.lblResult.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // num
+            // btnViewAll
             // 
-            this.num.FillWeight = 50F;
-            this.num.HeaderText = "#";
-            this.num.Name = "num";
-            // 
-            // name
-            // 
-            this.name.FillWeight = 300F;
-            this.name.HeaderText = "Name";
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
-            // 
-            // address
-            // 
-            this.address.FillWeight = 400F;
-            this.address.HeaderText = "Address";
-            this.address.Name = "address";
-            this.address.ReadOnly = true;
+            this.btnViewAll.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnViewAll.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnViewAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewAll.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnViewAll.Location = new System.Drawing.Point(417, 109);
+            this.btnViewAll.Name = "btnViewAll";
+            this.btnViewAll.Size = new System.Drawing.Size(59, 26);
+            this.btnViewAll.TabIndex = 54;
+            this.btnViewAll.Text = "View All";
+            this.btnViewAll.UseVisualStyleBackColor = false;
+            this.btnViewAll.Click += new System.EventHandler(this.ViewAll_Click);
             // 
             // frmCustomerSearch
             // 
@@ -227,6 +243,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(501, 396);
+            this.Controls.Add(this.btnViewAll);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
@@ -270,6 +287,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn num;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn address;
+        private System.Windows.Forms.Button btnViewAll;
     }
 }
 

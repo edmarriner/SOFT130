@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomerAdd));
             this.txtSurname = new System.Windows.Forms.TextBox();
             this.txtDoBDD = new System.Windows.Forms.TextBox();
@@ -73,6 +74,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
+            this.tmrDateTime = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboPostcode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboCityTown)).BeginInit();
@@ -670,7 +672,7 @@
             this.lblDate.AutoSize = true;
             this.lblDate.BackColor = System.Drawing.Color.SkyBlue;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(434, 9);
+            this.lblDate.Location = new System.Drawing.Point(382, 9);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(44, 20);
             this.lblDate.TabIndex = 54;
@@ -681,11 +683,17 @@
             this.lblTime.AutoSize = true;
             this.lblTime.BackColor = System.Drawing.Color.SkyBlue;
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(434, 32);
+            this.lblTime.Location = new System.Drawing.Point(382, 32);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(43, 20);
             this.lblTime.TabIndex = 55;
             this.lblTime.Text = "Time";
+            // 
+            // tmrDateTime
+            // 
+            this.tmrDateTime.Enabled = true;
+            this.tmrDateTime.Interval = 1000;
+            this.tmrDateTime.Tick += new System.EventHandler(this.tmrDateTime_Tick);
             // 
             // frmCustomerAdd
             // 
@@ -777,5 +785,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblTime;
+        private System.Windows.Forms.Timer tmrDateTime;
     }
 }

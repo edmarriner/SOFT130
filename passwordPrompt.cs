@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace SOFT130Project
 {
@@ -50,6 +51,7 @@ namespace SOFT130Project
         private void frmPasswordPrompt_Load(object sender, EventArgs e)
         {
             generateVerification();
+            tmrDateTime_Tick(sender, e);
         }
 
         private void generateVerification()
@@ -131,6 +133,13 @@ namespace SOFT130Project
             frmCustomerView frmCustomerView = new frmCustomerView(fileClass);
             frmCustomerView.Show();
             this.Close();
+        }
+
+        private void tmrDateTime_Tick(object sender, EventArgs e)
+        {
+            DateTime CurrTime = DateTime.Now;
+            lblDate.Text = CurrTime.ToString("D");
+            lblTime.Text = CurrTime.ToString("hh:mm:ss tt", CultureInfo.CreateSpecificCulture("en-US"));
         }
     }
 }
